@@ -1,0 +1,102 @@
+:root {
+    --copper: #b87333;
+    --sandstone: #d2b48c;
+    --deep-teal: #040d0e;
+}
+
+body {
+    background-color: var(--deep-teal);
+    color: #e2e8f0;
+    font-family: 'Rajdhani', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, .font-orbitron { font-family: 'Orbitron', sans-serif; letter-spacing: 3px; }
+h1, h2 { text-shadow: 0 0 20px rgba(255,192,128,0.5), 0 0 40px rgba(255,192,128,0.3); }
+
+/* BASE GRADIENT + PARTICLES */
+.bg-animate {
+    position: fixed; inset: 0;
+    background: linear-gradient(270deg, #040d0e, #07171b, #040d0e, #07171b);
+    background-size: 800% 800%;
+    animation: gradientBG 30s ease infinite;
+    z-index: -4;
+}
+@keyframes gradientBG {
+    0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;}
+}
+
+.grid-overlay {
+    position: fixed; inset:0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -3;
+    animation: moveOverlay 50s linear infinite;
+}
+@keyframes moveOverlay {0%{background-position:0 0;}100%{background-position:800px 800px;}}
+
+/* CINEMATIC IMAGE LAYERS */
+.cinema-layer { position: fixed; inset: 0; background-repeat:no-repeat; background-size:contain; pointer-events:none; z-index:-2; opacity:0.9; }
+.cinema-guardian { background-image: url("YOUR_CHARACTER_IMAGE.jpg"); background-position:bottom left; animation: guardianFloat 24s ease-in-out infinite alternate; filter: drop-shadow(0 0 40px rgba(0,255,255,0.25)); }
+@keyframes guardianFloat {0%{transform:translate3d(0,0,0) scale(1);}100%{transform:translate3d(0,-20px,0) scale(1.02);}}
+
+.cinema-city { background-image: url("YOUR_CITY_IMAGE.jpg"); background-position:bottom right; opacity:0.7; mix-blend-mode:screen; animation: cityDrift 40s linear infinite; }
+@keyframes cityDrift {0%{transform:translateX(0);}50%{transform:translateX(-40px);}100%{transform:translateX(0);}}
+
+/* SIGILS */
+.sigil { position:fixed; width:140px;height:140px; background-image: url("YOUR_SIGIL_IMAGE.jpg"); background-size:cover; background-position:center; mix-blend-mode:screen; filter:drop-shadow(0 0 30px rgba(0,255,255,0.7)); opacity:0.45; pointer-events:none; z-index:-1; }
+.sigil-top { top:8%; right:10%; animation:sigilOrbit 32s linear infinite; }
+.sigil-mid { top:48%; left:5%; animation:sigilOrbit 40s linear infinite reverse; }
+.sigil-bottom { bottom:4%; right:3%; animation:sigilOrbit 36s linear infinite; }
+@keyframes sigilOrbit {0%{transform:translate3d(0,0,0) rotate(0deg);}50%{transform:translate3d(10px,-10px,0) rotate(10deg);}100%{transform:translate3d(0,0,0) rotate(0deg);}}
+
+/* city strip */
+.city-strip { height:180px; background-image: linear-gradient(to top, rgba(4,13,14,1), rgba(4,13,14,0)), url("YOUR_CITY_IMAGE.jpg"); background-size:cover; background-position:center; opacity:0.55; mix-blend-mode:screen; }
+
+/* section backgrounds */
+.section-city-bg::before { content:""; position:absolute; inset:0; background-image:url("YOUR_CITY_IMAGE.jpg"); background-size:cover; background-position:center; opacity:0.25; mix-blend-mode:screen; filter:blur(2px); z-index:-1; }
+.section-sigil-bg::before { content:""; position:absolute; inset:-40px; background-image: radial-gradient(circle at 10% 0%, rgba(0,255,255,0.25), transparent 55%), radial-gradient(circle at 90% 100%, rgba(184,115,51,0.35), transparent 60%), url("YOUR_SIGIL_IMAGE.jpg"); background-repeat:no-repeat; background-size:45% 45%, 45% 45%, 75% 75%; background-position:0% 0%,100% 100%,center; opacity:0.25; mix-blend-mode:screen; z-index:-1; }
+
+/* UTILITIES */
+.text-copper{color:var(--copper);}
+.border-copper{border-color:var(--copper);}
+.bg-copper{background-color:var(--copper);}
+.glass{background: rgba(4,13,14,0.82); backdrop-filter: blur(16px); border:1px solid rgba(184,115,51,0.2); transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;}
+.card-float{transform-style: preserve-3d;}
+.card-float:hover{transform:translateY(-6px); box-shadow:0 20px 45px rgba(0,0,0,0.6); border-color:rgba(184,115,51,0.6);}
+.section-title{border-left:4px solid var(--copper); padding-left:1.5rem; margin-bottom:3rem; text-transform:uppercase;}
+.btn-copper{background:linear-gradient(135deg,var(--copper),#8b4513); color:white; padding:1rem 2.5rem; font-weight:bold; text-transform:uppercase; clip-path:polygon(10% 0,100% 0,90% 100%,0 100%); transition: all 0.4s ease; cursor:pointer;}
+.btn-copper:hover{box-shadow:0 0 20px #b87333,0 0 40px #b87333,0 0 60px #b87333; transform:scale(1.05) translateY(-3px); filter:brightness(1.2);}
+.brochure-pulse{animation:brochurePulse 3s ease-in-out infinite;}
+@keyframes brochurePulse{0%{box-shadow:0 0 0 0 rgba(184,115,51,0.45);}70%{box-shadow:0 0 0 22px rgba(184,115,51,0);}100%{box-shadow:0 0 0 0 rgba(184,115,51,0);}}
+.nav-link{transition:color 0.3s ease; position:relative;}
+.nav-link::after{content:''; position:absolute; width:0; height:1px; bottom:-5px; left:0; background-color:var(--copper); transition:width 0.3s ease;}
+.nav-link:hover::after{width:100%;}
+
+/* responsive */
+@media(max-width:1024px){.cinema-guardian,.cinema-city{opacity:0.45;background-size:80%;}}
+@media(max-width:640px){.cinema-guardian,.cinema-city{display:none;}.sigil{opacity:0.25;width:90px;height:90px;}}
+
+/* HERO STATIC BACKGROUND IMAGE */
+.hero-bg {
+    background-image: url("/images/background.png");
+    background-size: cover;          /* Cover entire hero section */
+    background-position: center;     /* Center the image */
+    background-repeat: no-repeat;    /* No repeat */
+    position: relative;              /* Keep hero content positioned correctly */
+    z-index: 0;                      /* Behind all hero content and animations */
+}
+
+/* Ensure hero text stays above the image */
+.hero-bg > div {
+    position: relative;
+    z-index: 1;
+}
+.city-strip {
+    height: 0;              /* was 180px */
+    overflow: hidden;
+}
+#rules {
+    padding-top: 2rem;      /* smaller top padding */
+}
