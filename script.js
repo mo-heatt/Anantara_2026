@@ -75,3 +75,9 @@ document.querySelectorAll('a.nav-link').forEach(link => {
         target.scrollIntoView({behavior: 'smooth'});
     });
 });
+
+AOS.init({ once: true });
+
+function openRegistrationForm() {
+  window.open("https://forms.gle/YOUR_GOOGLE_FORM_LINK", "_blank");
+}
