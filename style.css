@@ -450,16 +450,33 @@ h2 {
 
 /* ===================== REGISTRATION SECTION FIXES ===================== */
 
-/* Fix mobile heading wrapping and centering */
+/* Registration heading: consistent, clean wrapping on all screens */
 #registration h2 {
-  word-break: break-word;
   text-align: center;
+  word-break: normal;          /* do not break mid‑word */
+  overflow-wrap: normal;
 }
 
-/* Slightly smaller on very small screens */
-@media (max-width: 480px) {
+/* Base (mobile) size */
+@media (max-width: 640px) {
   #registration h2 {
-    font-size: 1.8rem; /* adjust if needed */
+    font-size: 1.75rem;        /* smaller so "Join the" + "Civilization" fit nicely */
+    line-height: 1.2;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #registration h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+}
+
+/* Large screens (keep your original look) */
+@media (min-width: 1025px) {
+  #registration h2 {
+    font-size: 2.5rem;         /* close to Tailwind text-4xl */
     line-height: 1.2;
   }
 }
