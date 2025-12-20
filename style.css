@@ -447,3 +447,19 @@ h2 {
 .event-modal-content::-webkit-scrollbar-track {
   background: transparent;
 }
+
+/* ===================== REGISTRATION SECTION FIXES ===================== */
+
+/* Fix mobile heading wrapping and centering */
+#registration h2 {
+  word-break: break-word;
+  text-align: center;
+}
+
+/* Slightly smaller on very small screens */
+@media (max-width: 480px) {
+  #registration h2 {
+    font-size: 1.8rem; /* adjust if needed */
+    line-height: 1.2;
+  }
+}
