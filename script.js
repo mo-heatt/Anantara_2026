@@ -77,8 +77,12 @@ sigils.forEach((sigil, index) => {
 // ===================== REGISTRATION FORM HANDLER =====================
 // Opens the Google Form in a new tab when "REGISTER NOW" is clicked
 function openRegistrationForm() {
-  window.open("https://forms.gle/YOUR_GOOGLE_FORM_LINK", "_blank");
+  window.open(
+    "https://docs.google.com/forms/d/e/1FAIpQLScns_18--9xlS90lEzWZcbkPD_xjC1b5wJxZTyB65sGBYLbuw/viewform?usp=dialog",
+    "_blank"
+  );
 }
+
 
 // ===================== EVENT DETAILS MODAL CONTENT =====================
 // HTML snippets for each event, injected into the modal on click

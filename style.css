@@ -480,3 +480,50 @@ h2 {
     line-height: 1.2;
   }
 }
+
+/* ===================== SCORING SECTION ===================== */
+
+/* Extra styling for the tier points table */
+.scoring-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.scoring-table th,
+.scoring-table td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Header row styling */
+.scoring-table thead tr {
+  background: rgba(4, 13, 14, 0.8);
+}
+
+/* Subtle row separators */
+.scoring-table tbody tr {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+/* Highlight row on hover */
+.scoring-table tbody tr:hover {
+  background-color: rgba(184, 115, 51, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Make sure scoring section overlay behaves like other city sections */
+#scoring {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tweak small-screen layout for scoring cards */
+@media (max-width: 640px) {
+  #scoring .glass {
+    padding: 1.25rem;
+  }
+
+  #scoring h3 {
+    font-size: 1.1rem;
+  }
+}
