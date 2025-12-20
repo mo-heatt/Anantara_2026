@@ -1,137 +1,335 @@
+/* ===================== THEME VARIABLES ===================== */
 :root {
-    --copper: #b87333;
-    --sandstone: #d2b48c;
-    --deep-teal: #040d0e;
+  --copper: #b87333;
+  --sandstone: #d2b48c;
+  --deep-teal: #040d0e;
 }
 
+/* ===================== GLOBAL BASE STYLES ===================== */
 body {
-    background-color: var(--deep-teal);
-    color: #e2e8f0;
-    font-family: 'Rajdhani', sans-serif;
-    scroll-behavior: smooth;
+  background-color: var(--deep-teal);
+  color: #e2e8f0;
+  font-family: "Rajdhani", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* TYPOGRAPHY */
-h1, h2, h3, .font-orbitron { font-family: 'Orbitron', sans-serif; letter-spacing: 3px; }
-h1, h2 { text-shadow: 0 0 20px rgba(255,192,128,0.5), 0 0 40px rgba(255,192,128,0.3); }
+/* ===================== TYPOGRAPHY ===================== */
+h1,
+h2,
+h3,
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+}
 
-/* BASE GRADIENT + PARTICLES */
+h1,
+h2 {
+  text-shadow: 0 0 20px rgba(255, 192, 128, 0.5),
+    0 0 40px rgba(255, 192, 128, 0.3);
+}
+
+/* ===================== BACKGROUND: GRADIENT & GRID ===================== */
 .bg-animate {
-    position: fixed; inset: 0;
-    background: linear-gradient(270deg, #040d0e, #07171b, #040d0e, #07171b);
-    background-size: 800% 800%;
-    animation: gradientBG 30s ease infinite;
-    z-index: -4;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(270deg, #040d0e, #07171b, #040d0e, #07171b);
+  background-size: 800% 800%;
+  animation: gradientBG 30s ease infinite;
+  z-index: -4;
 }
+
 @keyframes gradientBG {
-    0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+/* Moving dotted grid overlay */
 .grid-overlay {
-    position: fixed; inset:0;
-    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    z-index: -3;
-    animation: moveOverlay 50s linear infinite;
-}
-@keyframes moveOverlay {0%{background-position:0 0;}100%{background-position:800px 800px;}}
-
-/* CINEMATIC IMAGE LAYERS */
-.cinema-layer { position: fixed; inset: 0; background-repeat:no-repeat; background-size:contain; pointer-events:none; z-index:-2; opacity:0.9; }
-.cinema-guardian { background-image: url("YOUR_CHARACTER_IMAGE.jpg"); background-position:bottom left; animation: guardianFloat 24s ease-in-out infinite alternate; filter: drop-shadow(0 0 40px rgba(0,255,255,0.25)); }
-@keyframes guardianFloat {0%{transform:translate3d(0,0,0) scale(1);}100%{transform:translate3d(0,-20px,0) scale(1.02);}}
-
-.cinema-city { background-image: url("YOUR_CITY_IMAGE.jpg"); background-position:bottom right; opacity:0.7; mix-blend-mode:screen; animation: cityDrift 40s linear infinite; }
-@keyframes cityDrift {0%{transform:translateX(0);}50%{transform:translateX(-40px);}100%{transform:translateX(0);}}
-
-/* SIGILS */
-.sigil { position:fixed; width:140px;height:140px; background-image: url("YOUR_SIGIL_IMAGE.jpg"); background-size:cover; background-position:center; mix-blend-mode:screen; filter:drop-shadow(0 0 30px rgba(0,255,255,0.7)); opacity:0.45; pointer-events:none; z-index:-1; }
-.sigil-top { top:8%; right:10%; animation:sigilOrbit 32s linear infinite; }
-.sigil-mid { top:48%; left:5%; animation:sigilOrbit 40s linear infinite reverse; }
-.sigil-bottom { bottom:4%; right:3%; animation:sigilOrbit 36s linear infinite; }
-@keyframes sigilOrbit {0%{transform:translate3d(0,0,0) rotate(0deg);}50%{transform:translate3d(10px,-10px,0) rotate(10deg);}100%{transform:translate3d(0,0,0) rotate(0deg);}}
-
-/* city strip */
-.city-strip { height:180px; background-image: linear-gradient(to top, rgba(4,13,14,1), rgba(4,13,14,0)), url("YOUR_CITY_IMAGE.jpg"); background-size:cover; background-position:center; opacity:0.55; mix-blend-mode:screen; }
-
-/* section backgrounds */
-.section-city-bg::before { content:""; position:absolute; inset:0; background-image:url("YOUR_CITY_IMAGE.jpg"); background-size:cover; background-position:center; opacity:0.25; mix-blend-mode:screen; filter:blur(2px); z-index:-1; }
-.section-sigil-bg::before { content:""; position:absolute; inset:-40px; background-image: radial-gradient(circle at 10% 0%, rgba(0,255,255,0.25), transparent 55%), radial-gradient(circle at 90% 100%, rgba(184,115,51,0.35), transparent 60%), url("YOUR_SIGIL_IMAGE.jpg"); background-repeat:no-repeat; background-size:45% 45%, 45% 45%, 75% 75%; background-position:0% 0%,100% 100%,center; opacity:0.25; mix-blend-mode:screen; z-index:-1; }
-
-/* UTILITIES */
-.text-copper{color:var(--copper);}
-.border-copper{border-color:var(--copper);}
-.bg-copper{background-color:var(--copper);}
-.glass{background: rgba(4,13,14,0.82); backdrop-filter: blur(16px); border:1px solid rgba(184,115,51,0.2); transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;}
-.card-float{transform-style: preserve-3d;}
-.card-float:hover{transform:translateY(-6px); box-shadow:0 20px 45px rgba(0,0,0,0.6); border-color:rgba(184,115,51,0.6);}
-.section-title{border-left:4px solid var(--copper); padding-left:1.5rem; margin-bottom:3rem; text-transform:uppercase;}
-.btn-copper{background:linear-gradient(135deg,var(--copper),#8b4513); color:white; padding:1rem 2.5rem; font-weight:bold; text-transform:uppercase; clip-path:polygon(10% 0,100% 0,90% 100%,0 100%); transition: all 0.4s ease; cursor:pointer;}
-.btn-copper:hover{box-shadow:0 0 20px #b87333,0 0 40px #b87333,0 0 60px #b87333; transform:scale(1.05) translateY(-3px); filter:brightness(1.2);}
-.brochure-pulse{animation:brochurePulse 3s ease-in-out infinite;}
-@keyframes brochurePulse{0%{box-shadow:0 0 0 0 rgba(184,115,51,0.45);}70%{box-shadow:0 0 0 22px rgba(184,115,51,0);}100%{box-shadow:0 0 0 0 rgba(184,115,51,0);}}
-.nav-link{transition:color 0.3s ease; position:relative;}
-.nav-link::after{content:''; position:absolute; width:0; height:1px; bottom:-5px; left:0; background-color:var(--copper); transition:width 0.3s ease;}
-.nav-link:hover::after{width:100%;}
-
-/* responsive */
-@media(max-width:1024px){.cinema-guardian,.cinema-city{opacity:0.45;background-size:80%;}}
-@media(max-width:640px){.cinema-guardian,.cinema-city{display:none;}.sigil{opacity:0.25;width:90px;height:90px;}}
-
-/* HERO STATIC BACKGROUND IMAGE */
-.hero-bg {
-    background-image: url("/images/background.png");
-    background-size: cover;          /* Cover entire hero section */
-    background-position: center;     /* Center the image */
-    background-repeat: no-repeat;    /* No repeat */
-    position: relative;              /* Keep hero content positioned correctly */
-    z-index: 0;                      /* Behind all hero content and animations */
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  z-index: -3;
+  animation: moveOverlay 50s linear infinite;
 }
 
-/* Ensure hero text stays above the image */
-.hero-bg > div {
-    position: relative;
-    z-index: 1;
-}
-.city-strip {
-    height: 0;              /* was 180px */
-    overflow: hidden;
-}
-#rules {
-    padding-top: 2rem;      /* smaller top padding */
+@keyframes moveOverlay {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 800px 800px;
+  }
 }
 
-/* EVENTS BUTTONS */
-.event-btn {
-  padding: 1.5rem;
-  background: rgba(0,0,0,0.7);
-  border: 1px solid rgba(184,115,51,0.4);
-  border-radius: 18px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: all 0.4s ease;
+/* ===================== CINEMATIC LAYERS (CHARACTER & CITY) ===================== */
+.cinema-layer {
+  position: fixed;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: -2;
+  opacity: 0.9;
 }
 
-.event-btn:hover {
-  transform: translateY(-6px);
+.cinema-guardian {
+  background-image: url("YOUR_CHARACTER_IMAGE.jpg");
+  background-position: bottom left;
+  animation: guardianFloat 24s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 40px rgba(0, 255, 255, 0.25));
+}
+
+@keyframes guardianFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(0, -20px, 0) scale(1.02);
+  }
+}
+
+.cinema-city {
+  background-image: url("YOUR_CITY_IMAGE.jpg");
+  background-position: bottom right;
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  animation: cityDrift 40s linear infinite;
+}
+
+@keyframes cityDrift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ===================== GLOWING SIGILS ===================== */
+.sigil {
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  background-image: url("YOUR_SIGIL_IMAGE.jpg");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.7));
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sigil-top {
+  top: 8%;
+  right: 10%;
+  animation: sigilOrbit 32s linear infinite;
+}
+
+.sigil-mid {
+  top: 48%;
+  left: 5%;
+  animation: sigilOrbit 40s linear infinite reverse;
+}
+
+.sigil-bottom {
+  bottom: 4%;
+  right: 3%;
+  animation: sigilOrbit 36s linear infinite;
+}
+
+@keyframes sigilOrbit {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(10px, -10px, 0) rotate(10deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+/* ===================== SECTION BACKGROUND OVERLAYS ===================== */
+.section-city-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("YOUR_CITY_IMAGE.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  mix-blend-mode: screen;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* ===================== UTILITY & REUSABLE COMPONENTS ===================== */
+.text-copper {
+  color: var(--copper);
+}
+
+.border-copper {
   border-color: var(--copper);
-  box-shadow: 0 0 25px rgba(184,115,51,0.4);
 }
 
-/* EVENT MODAL */
+.bg-copper {
+  background-color: var(--copper);
+}
+
+.glass {
+  background: rgba(4, 13, 14, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(184, 115, 51, 0.2);
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card-float {
+  transform-style: preserve-3d;
+}
+
+.card-float:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  border-color: rgba(184, 115, 51, 0.6);
+}
+
+.section-title {
+  border-left: 4px solid var(--copper);
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.btn-copper {
+  background: linear-gradient(135deg, var(--copper), #8b4513);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn-copper:hover {
+  box-shadow: 0 0 20px #b87333, 0 0 40px #b87333, 0 0 60px #b87333;
+  transform: scale(1.05) translateY(-3px);
+  filter: brightness(1.2);
+}
+
+.brochure-pulse {
+  animation: brochurePulse 3s ease-in-out infinite;
+}
+
+@keyframes brochurePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 115, 51, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 22px rgba(184, 115, 51, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 115, 51, 0);
+  }
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--copper);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===================== RESPONSIVE TWEAKS ===================== */
+@media (max-width: 1024px) {
+  .cinema-guardian,
+  .cinema-city {
+    opacity: 0.45;
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .cinema-guardian,
+  .cinema-city {
+    display: none;
+  }
+
+  .sigil {
+    opacity: 0.25;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* ===================== HERO SECTION ===================== */
+.hero-bg {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-bg > div {
+  position: relative;
+  z-index: 1;
+}
+
+/* hide city-strip between hero and content (kept for structure) */
+.city-strip {
+  height: 0;
+  overflow: hidden;
+}
+
+/* small spacing above guidelines */
+#rules {
+  padding-top: 2rem;
+}
+
+/* ===================== EVENT DETAILS MODAL ===================== */
 .event-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .event-modal-content {
-  max-width: 900px;
+  max-width: 1000px;
   max-height: 85vh;
   overflow-y: auto;
   padding: 3rem;
@@ -146,19 +344,23 @@ h1, h2 { text-shadow: 0 0 20px rgba(255,192,128,0.5), 0 0 40px rgba(255,192,128,
   font-size: 1.5rem;
   color: white;
 }
-.hidden { display: none; }
 
+.hidden {
+  display: none;
+}
+
+/* ===================== EVENTS SECTION LAYOUT ===================== */
 .event-grid {
   display: grid;
-  grid-template-columns: 1fr;   /* one event per row */
-  gap: 0.4rem;                  /* vertical spacing between events */
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
 }
 
 .event-card {
-  padding: 0.35rem 0;           /* small vertical spacing */
-  background: transparent;      /* no background box */
-  border: none;                 /* remove border */
-  border-radius: 0;             /* no rounded corners */
+  padding: 0.35rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   cursor: pointer;
   transition: color 0.2s ease, transform 0.2s ease;
 }
@@ -167,45 +369,24 @@ h1, h2 { text-shadow: 0 0 20px rgba(255,192,128,0.5), 0 0 40px rgba(255,192,128,
   margin: 4rem 0 1rem;
   font-size: 1.6rem;
   color: var(--sandstone);
-  padding-left: 0;        /* or remove this line */
-  border-left: none;      /* remove orange line */
+  padding-left: 0;
+  border-left: none;
 }
 
 .event-card:hover {
-  transform: translateX(4px);   /* small horizontal slide */
-  box-shadow: none;             /* remove glow */
+  transform: translateX(4px);
+  box-shadow: none;
   border-color: transparent;
-  color: var(--sandstone);      /* or var(--copper) if you prefer */
+  color: var(--sandstone);
 }
 
-.event-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.9);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.event-modal-content {
-  max-width: 1000px;
-  max-height: 85vh;
-  overflow-y: auto;
-  padding: 3rem;
-  border-radius: 28px;
-}
-
-.hidden { display: none; }
-
-/* 3 main event blocks (Pre / On-Stage / Off-Stage) */
+/* 3 main event columns */
 .event-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
-/* Responsive: 2 columns on tablets, 1 on mobile */
 @media (max-width: 1024px) {
   .event-columns {
     grid-template-columns: repeat(2, 1fr);
@@ -218,8 +399,51 @@ h1, h2 { text-shadow: 0 0 20px rgba(255,192,128,0.5), 0 0 40px rgba(255,192,128,
   }
 }
 
-/* Slightly lighter alt background for alternating sections */
-.section-alt {
-  background: radial-gradient(circle at top, rgba(255,255,255,0.03), transparent 55%),
-              rgba(2, 8, 10, 0.9);   /* a bit lighter than deep-teal */
+/* ===================== MODAL TYPOGRAPHY & SCROLLBAR ===================== */
+#eventModalBody h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: var(--copper);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+
+#eventModalBody h3 {
+  font-weight: 700;
+  color: var(--sandstone);
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+#eventModalBody p {
+  color: #e5e7eb;
+}
+
+#eventModalBody ul {
+  margin-left: 1.25rem;
+  list-style: disc;
+  color: #cbd5f5;
+}
+
+#eventModalBody li {
+  margin-bottom: 0.2rem;
+}
+
+.event-modal-content {
+  scrollbar-color: var(--copper) transparent;
+  scrollbar-width: thin;
+}
+
+.event-modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.event-modal-content::-webkit-scrollbar-thumb {
+  background: rgba(184, 115, 51, 0.7);
+  border-radius: 999px;
+}
+
+.event-modal-content::-webkit-scrollbar-track {
+  background: transparent;
 }
