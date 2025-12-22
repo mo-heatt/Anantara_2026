@@ -54,66 +54,81 @@
     <div class="sigil sigil-mid"></div>
     <div class="sigil sigil-bottom"></div>
 
-    <nav
-  class="fixed top-0 w-full z-50 glass py-2 px-3 md:px-4 border-b border-white/10"
+<nav
+  class="fixed top-0 w-full z-50 glass py-1.5 px-2 md:px-3 border-b border-white/10"
 >
   <div class="w-full flex items-center justify-between gap-2">
-    <!-- Left logo -->
-    <div class="flex items-center gap-2">
+    <!-- Left: logo + small text -->
+    <div class="flex items-center flex-shrink-0 gap-1.5">
       <img
         src="./logos/InstitutionLogo.jpeg"
         alt="Institution's Innovation Council"
-        class="logo-nav logo-nav--mono"
+        class="w-7 h-7 object-contain"
       />
       <span
-        class="text-[0.65rem] sm:text-xs text-gray-300 leading-tight uppercase tracking-[0.18em]"
+        class="text-[0.55rem] xs:text-[0.6rem] text-gray-300 leading-tight uppercase tracking-[0.16em]"
       >
         Institution's<br />Innovation Council
       </span>
     </div>
 
-    <!-- Center title -->
-    <div class="flex-1 text-center">
+    <!-- Center: title (takes remaining space, truncated if needed) -->
+    <div
+      class="flex-1 flex justify-center px-1 min-w-0"
+    >
       <span
-        class="text-lg md:text-2xl font-bold font-orbitron text-white tracking-[0.35em] uppercase"
+        class="text-[0.8rem] xs:text-sm md:text-lg font-bold font-orbitron text-white tracking-[0.22em] md:tracking-[0.32em] uppercase truncate text-center"
       >
         ANANTARA <span class="text-copper">2026</span>
       </span>
     </div>
 
-    <!-- Desktop links -->
-    <div
-      class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
-    >
-      <a href="#rules" class="nav-link">Guidelines</a>
-      <a href="#events" class="nav-link">Events</a>
-      <a href="#scoring" class="nav-link">Scoring</a>
-      <a href="#schedule" class="nav-link">Schedule</a>
-      <a
-        href="#registration"
-        class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
+    <!-- Right: hamburger (mobile) or links (desktop) -->
+    <div class="flex items-center flex-shrink-0">
+      <!-- Desktop links -->
+      <div
+        class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
       >
-        Register
-      </a>
-    </div>
+        <a href="#rules" class="nav-link">Guidelines</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#scoring" class="nav-link">Scoring</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a
+          href="#registration"
+          class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
+        >
+          Register
+        </a>
+      </div>
 
-    <!-- Mobile hamburger -->
-    <button
-      id="mobileMenuBtn"
-      class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-black"
-      aria-label="Open main menu"
-    >
-      <!-- simple hamburger icon -->
-      <span class="block w-5 h-0.5 bg-gray-200 mb-1"></span>
-      <span class="block w-5 h-0.5 bg-gray-200 mb-1"></span>
-      <span class="block w-5 h-0.5 bg-gray-200"></span>
-    </button>
+      <!-- Clean hamburger icon (mobile only) -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-black"
+        aria-label="Open main menu"
+      >
+        <svg
+          id="hamburgerIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M4 7h16" />
+          <path d="M4 12h16" />
+          <path d="M4 17h16" />
+        </svg>
+      </button>
+    </div>
   </div>
 
   <!-- Mobile menu panel -->
   <div
     id="mobileMenu"
-    class="md:hidden hidden mt-2 pb-3 border-t border-white/10 bg-black/70 backdrop-blur-lg"
+    class="md:hidden hidden mt-1 pb-3 border-t border-white/10 bg-black/80 backdrop-blur-lg"
   >
     <div
       class="px-4 pt-3 space-y-2 text-[0.7rem] uppercase tracking-[0.2em] font-semibold"
@@ -131,7 +146,6 @@
     </div>
   </div>
 </nav>
-
 
     <!-- ===================== HERO SECTION ===================== -->
 <header
