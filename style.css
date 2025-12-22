@@ -188,17 +188,111 @@ h2 {
 }
 
 /* ===================== SECTION BACKGROUND OVERLAYS ===================== */
-.section-city-bg::before {
+
+/* General Guidelines */
+#rules {
+  position: relative;
+  overflow: hidden;
+}
+
+#rules::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("YOUR_CITY_IMAGE.jpg");
+  background-image: url("./public/backgrounds/bg-rules-grid.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.25;
+  opacity: 0.18;
   mix-blend-mode: screen;
-  filter: blur(2px);
+  pointer-events: none;
   z-index: -1;
+}
+
+/* Events of the Indus Realm */
+#events {
+  position: relative;
+  overflow: hidden;
+}
+
+#events::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./public/backgrounds/bg-events-hud.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Scoring System */
+#scoring {
+  position: relative;
+  overflow: hidden;
+}
+
+#scoring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./public/backgrounds/bg-scoring-dashboard.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Chronicle of Events (Schedule) */
+#schedule {
+  position: relative;
+  overflow: hidden;
+}
+
+#schedule::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./public/backgrounds/bg-schedule-texture.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Registration / CTA */
+#registration {
+  position: relative;
+  overflow: hidden;
+}
+
+#registration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./public/backgrounds/bg-registration-city.png");
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Keep content above overlays */
+#rules > *,
+#events > *,
+#scoring > *,
+#schedule > *,
+#registration > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ===================== UTILITY & REUSABLE COMPONENTS ===================== */
