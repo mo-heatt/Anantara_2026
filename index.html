@@ -56,26 +56,47 @@
 
     <!-- ===================== NAVIGATION BAR ===================== -->
     <nav
-      class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center border-b border-white/10"
+      class="fixed top-0 w-full z-50 glass py-2 px-2 md:px-3 border-b border-white/10"
     >
-      <!-- Brand / Logo -->
-      <div class="text-xl font-bold font-orbitron text-white">
-        ANANTARA <span class="text-copper">2026</span>
-      </div>
+      <div class="w-full flex items-center justify-between gap-2">
+        <!-- Left logo -->
+        <div class="flex items-center gap-2">
+          <img
+            src="./logos/InstitutionLogo.jpeg"
+            alt="Institution's Innovation Council"
+            class="logo-nav logo-nav--mono"
+          />
+          <span
+            class="text-[0.65rem] sm:text-xs text-gray-300 leading-tight uppercase tracking-[0.18em]"
+          >
+            Institution's<br />Innovation Council
+          </span>
+        </div>
 
-      <!-- Desktop links -->
-      <div
-        class="hidden lg:flex space-x-6 uppercase text-xs font-bold tracking-widest"
-      >
-        <a href="#rules" class="nav-link">Guidelines</a>
-        <a href="#events" class="nav-link">Events</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a
-          href="#registration"
-          class="text-copper border border-copper px-4 py-2 hover:bg-copper hover:text-white transition-all duration-300"
+        <!-- Center title -->
+        <div class="flex-1 text-center">
+          <span
+            class="text-lg md:text-2xl font-bold font-orbitron text-white tracking-[0.35em] uppercase"
+          >
+            ANANTARA <span class="text-copper">2026</span>
+          </span>
+        </div>
+
+        <!-- Right nav links -->
+        <div
+          class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
         >
-          Register
-        </a>
+          <a href="#rules" class="nav-link">Guidelines</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#scoring" class="nav-link">Scoring</a>
+          <a href="#schedule" class="nav-link">Schedule</a>
+          <a
+            href="#registration"
+            class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
+          >
+            Register
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -84,19 +105,48 @@
       class="h-screen flex flex-col justify-center items-center text-center px-4 pt-20 hero-bg"
     >
       <div data-aos="zoom-out" data-aos-duration="1200">
-        <h2 class="text-xl tracking-[0.5em] text-sandstone mb-4 uppercase">
-          VVM'S SHREE DAMODAR COLLEGE
-        </h2>
+        <!-- Institution block -->
+        <p class="text-sm md:text-base tracking-[0.4em] text-sandstone/90 mb-3 uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          VIDYA VIKAS MANDAL'S
+        </p>
+
+        <p class="text-2xl md:text-3xl font-bold text-white mb-2 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          SHREE DAMODAR COLLEGE OF COMMERCE &amp; ECONOMICS
+        </p>
+
+        <p class="text-base md:text-lg text-sandstone mb-3 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          MARGAO – GOA
+        </p>
+
+        <p class="text-sm md:text-base text-gray-100 mb-1 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          AFFILIATED TO GOA UNIVERSITY
+        </p>
+
+        <p class="text-sm md:text-base text-gray-100 mb-5 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          ACCREDITED BY NAAC WITH ‘A’ GRADE
+        </p>
+
+        <p class="text-sm md:text-base text-sandstone mb-5 tracking-[0.28em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          STUDENTS’ COUNCIL, CULTURAL COUNCIL &amp; SPORTS COUNCIL
+        </p>
+
+        <p class="text-sm md:text-base text-sandstone/90 mb-8 tracking-[0.38em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          PRESENTS
+        </p>
+
+        <!-- Main title -->
         <h1
-          class="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight"
+          class="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
         >
           RISE OF <span class="text-copper">INDUS</span>
         </h1>
+
         <p
-          class="max-w-2xl mx-auto text-gray-300 text-lg md:text-xl mb-10 italic"
+          class="max-w-2xl mx-auto text-gray-200 text-lg md:text-xl mb-10 italic drop-shadow-[0_0_16px_rgba(0,0,0,0.9)]"
         >
           "A journey from our roots to the future we dream of."
         </p>
+
         <div class="flex space-x-4 justify-center">
           <a id="exploreCivilizationBtn" href="#events" class="btn-copper">
             EXPLORE CIVILIZATION
@@ -225,7 +275,7 @@
       </div>
     </section>
 
-        <!-- ===================== SCORING SYSTEM SECTION ===================== -->
+    <!-- ===================== SCORING SYSTEM SECTION ===================== -->
     <section id="scoring" class="py-24 px-6 section-city-bg">
       <div class="max-w-7xl mx-auto">
         <h2
@@ -244,14 +294,18 @@
             </h3>
             <ul class="space-y-3 text-sm text-gray-300">
               <li>
-                <span class="font-semibold text-sandstone">Compulsory Participation:</span>
-                Participation in all events is mandatory. Failure to participate in any event
-                will result in a deduction of <span class="text-copper font-semibold">1000 points</span>.
+                <span class="font-semibold text-sandstone"
+                  >Compulsory Participation:</span
+                >
+                Participation in all events is mandatory. Failure to participate
+                in any event will result in a deduction of
+                <span class="text-copper font-semibold">1000 points</span>.
               </li>
               <li>
                 <span class="font-semibold text-sandstone">Time Limit:</span>
                 Exceeding the time limit for any event leads to a deduction of
-                <span class="text-copper font-semibold">200 points</span> for that event.
+                <span class="text-copper font-semibold">200 points</span> for
+                that event.
               </li>
             </ul>
           </div>
@@ -263,7 +317,9 @@
             </h3>
             <ul class="space-y-3 text-sm text-gray-300">
               <li>
-                <span class="font-semibold text-sandstone">Early Bird Points (per day):</span>
+                <span class="font-semibold text-sandstone"
+                  >Early Bird Points (per day):</span
+                >
                 Full team arrival at the venue earns:
                 <br />
                 <span class="ml-4 block">
@@ -276,17 +332,21 @@
                 </span>
               </li>
               <li>
-                <span class="font-semibold text-sandstone">Joker Placement:</span>
-                Joker must be placed at the registration counter during registration and
-                can be used only on a <span class="text-copper font-semibold">Supreme Tier</span> event,
-                specifying the exact position (1st / 2nd / 3rd).
+                <span class="font-semibold text-sandstone"
+                  >Joker Placement:</span
+                >
+                Joker must be placed at the registration counter during
+                registration and can be used only on a
+                <span class="text-copper font-semibold">Supreme Tier</span>
+                event, specifying the exact position (1st / 2nd / 3rd).
               </li>
               <li>
                 <span class="font-semibold text-sandstone">Joker Scoring:</span>
                 If the team wins the specified position:
-                <span class="text-copper font-semibold">+2000 points</span>.
-                If they fail to win that position, their score for that event becomes
-                <span class="text-copper font-semibold">0</span>, irrespective of any other position.
+                <span class="text-copper font-semibold">+2000 points</span>. If
+                they fail to win that position, their score for that event
+                becomes <span class="text-copper font-semibold">0</span>,
+                irrespective of any other position.
               </li>
             </ul>
           </div>
@@ -299,7 +359,9 @@
           </h3>
           <div class="overflow-x-auto text-sm">
             <table class="min-w-full text-left text-gray-200 scoring-table">
-              <thead class="text-xs uppercase text-sandstone border-b border-white/10">
+              <thead
+                class="text-xs uppercase text-sandstone border-b border-white/10"
+              >
                 <tr>
                   <th class="py-2 pr-4">Tier</th>
                   <th class="py-2 px-4">1st Place</th>
@@ -348,7 +410,11 @@
         <!-- Events mapped to tiers -->
         <div class="grid lg:grid-cols-4 gap-6">
           <!-- Supreme Tier events -->
-          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="0">
+          <div
+            class="glass p-6 card-float"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Supreme Tier
             </h3>
@@ -361,7 +427,11 @@
           </div>
 
           <!-- Elite Tier events -->
-          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="glass p-6 card-float"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Elite Tier
             </h3>
@@ -374,7 +444,11 @@
           </div>
 
           <!-- Warrior Tier events -->
-          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="glass p-6 card-float"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Warrior Tier
             </h3>
@@ -392,7 +466,11 @@
           </div>
 
           <!-- Challenge Tier events -->
-          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="glass p-6 card-float"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Challenge Tier
             </h3>
