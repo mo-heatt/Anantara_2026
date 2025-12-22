@@ -647,3 +647,21 @@ document.addEventListener("keydown", event => {
     modal.classList.add("hidden");
   }
 });
+
+// Mobile navbar toggle
+const mobileBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // optional: close menu when clicking a link
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
+}
+

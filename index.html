@@ -54,51 +54,84 @@
     <div class="sigil sigil-mid"></div>
     <div class="sigil sigil-bottom"></div>
 
-    <!-- ===================== NAVIGATION BAR ===================== -->
     <nav
-      class="fixed top-0 w-full z-50 glass py-2 px-2 md:px-3 border-b border-white/10"
+  class="fixed top-0 w-full z-50 glass py-2 px-3 md:px-4 border-b border-white/10"
+>
+  <div class="w-full flex items-center justify-between gap-2">
+    <!-- Left logo -->
+    <div class="flex items-center gap-2">
+      <img
+        src="./logos/InstitutionLogo.jpeg"
+        alt="Institution's Innovation Council"
+        class="logo-nav logo-nav--mono"
+      />
+      <span
+        class="text-[0.65rem] sm:text-xs text-gray-300 leading-tight uppercase tracking-[0.18em]"
+      >
+        Institution's<br />Innovation Council
+      </span>
+    </div>
+
+    <!-- Center title -->
+    <div class="flex-1 text-center">
+      <span
+        class="text-lg md:text-2xl font-bold font-orbitron text-white tracking-[0.35em] uppercase"
+      >
+        ANANTARA <span class="text-copper">2026</span>
+      </span>
+    </div>
+
+    <!-- Desktop links -->
+    <div
+      class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
     >
-      <div class="w-full flex items-center justify-between gap-2">
-        <!-- Left logo -->
-        <div class="flex items-center gap-2">
-          <img
-            src="./logos/InstitutionLogo.jpeg"
-            alt="Institution's Innovation Council"
-            class="logo-nav logo-nav--mono"
-          />
-          <span
-            class="text-[0.65rem] sm:text-xs text-gray-300 leading-tight uppercase tracking-[0.18em]"
-          >
-            Institution's<br />Innovation Council
-          </span>
-        </div>
+      <a href="#rules" class="nav-link">Guidelines</a>
+      <a href="#events" class="nav-link">Events</a>
+      <a href="#scoring" class="nav-link">Scoring</a>
+      <a href="#schedule" class="nav-link">Schedule</a>
+      <a
+        href="#registration"
+        class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
+      >
+        Register
+      </a>
+    </div>
 
-        <!-- Center title -->
-        <div class="flex-1 text-center">
-          <span
-            class="text-lg md:text-2xl font-bold font-orbitron text-white tracking-[0.35em] uppercase"
-          >
-            ANANTARA <span class="text-copper">2026</span>
-          </span>
-        </div>
+    <!-- Mobile hamburger -->
+    <button
+      id="mobileMenuBtn"
+      class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-black"
+      aria-label="Open main menu"
+    >
+      <!-- simple hamburger icon -->
+      <span class="block w-5 h-0.5 bg-gray-200 mb-1"></span>
+      <span class="block w-5 h-0.5 bg-gray-200 mb-1"></span>
+      <span class="block w-5 h-0.5 bg-gray-200"></span>
+    </button>
+  </div>
 
-        <!-- Right nav links -->
-        <div
-          class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
-        >
-          <a href="#rules" class="nav-link">Guidelines</a>
-          <a href="#events" class="nav-link">Events</a>
-          <a href="#scoring" class="nav-link">Scoring</a>
-          <a href="#schedule" class="nav-link">Schedule</a>
-          <a
-            href="#registration"
-            class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
-          >
-            Register
-          </a>
-        </div>
-      </div>
-    </nav>
+  <!-- Mobile menu panel -->
+  <div
+    id="mobileMenu"
+    class="md:hidden hidden mt-2 pb-3 border-t border-white/10 bg-black/70 backdrop-blur-lg"
+  >
+    <div
+      class="px-4 pt-3 space-y-2 text-[0.7rem] uppercase tracking-[0.2em] font-semibold"
+    >
+      <a href="#rules" class="block nav-link-mobile">Guidelines</a>
+      <a href="#events" class="block nav-link-mobile">Events</a>
+      <a href="#scoring" class="block nav-link-mobile">Scoring</a>
+      <a href="#schedule" class="block nav-link-mobile">Schedule</a>
+      <a
+        href="#registration"
+        class="block text-copper border border-copper text-center px-3 py-2 mt-2 hover:bg-copper hover:text-white transition-all duration-300"
+      >
+        Register
+      </a>
+    </div>
+  </div>
+</nav>
+
 
     <!-- ===================== HERO SECTION ===================== -->
 <header
