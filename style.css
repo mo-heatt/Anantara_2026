@@ -252,19 +252,6 @@ h2 {
   overflow: hidden;
 }
 
-#schedule::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./public/backgrounds/bg-schedule-texture.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.16;
-  mix-blend-mode: soft-light;
-  pointer-events: none;
-  z-index: -1;
-}
-
 /* Registration / CTA */
 #registration {
   position: relative;
@@ -826,3 +813,142 @@ h2 {
     font-size: 1.1rem;
   }
 }
+
+/* ===================== SECTION BACKGROUND OVERLAYS ===================== */
+
+/* General Guidelines */
+#rules {
+  position: relative;
+  overflow: hidden;
+}
+
+#rules::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.7), rgba(4, 13, 14, 0.85)),
+    url("./public/backgrounds/bg-rules-indus-future.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Events of the Indus Realm */
+#events {
+  position: relative;
+  overflow: hidden;
+}
+
+#events::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.6), rgba(4, 13, 14, 0.9)),
+    url("./public/backgrounds/bg-events-indus-plaza.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Scoring System */
+#scoring {
+  position: relative;
+  overflow: hidden;
+}
+
+#scoring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.85), rgba(4, 13, 14, 0.95)),
+    url("./public/backgrounds/bg-scoring-hud-tablet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Chronicle of Events (Schedule) */
+#schedule {
+  position: relative;
+  overflow: hidden;
+}
+
+#schedule::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.4), rgba(4, 13, 14, 0.75)),
+    url("./public/backgrounds/bg-schedule-cityline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;                 /* was ~0.35–0.45 */
+  mix-blend-mode: screen;       /* was soft-light */
+  pointer-events: none;
+  z-index: -1;
+}
+
+#schedule .glass {
+  background: rgba(4, 13, 14, 0.78);        /* was 0.82 globally */
+  border-color: rgba(184, 115, 51, 0.16);   /* a bit softer */
+}
+
+
+/* Registration / CTA */
+#registration {
+  position: relative;
+  overflow: hidden;
+}
+
+#registration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.75), rgba(4, 13, 14, 0.9)),
+    url("./public/backgrounds/bg-registration-gate.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Keep content above overlays */
+#rules > *,
+#events > *,
+#scoring > *,
+#schedule > *,
+#registration > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  #rules,
+  #events,
+  #scoring,
+  #schedule,
+  #registration {
+    min-height: 60vh;
+  }
+}
+
