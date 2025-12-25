@@ -927,7 +927,7 @@ h2 {
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  opacity: 0.75;            /* was 0.4 */
+  opacity: 0.6;            /* was 0.4 */
   mix-blend-mode: screen;   /* was screen already or similar; keep or set to screen */
   pointer-events: none;
   z-index: -1;
