@@ -18,6 +18,13 @@
       rel="stylesheet"
     />
 
+    <!-- Black Ops One Font -->
+    <link
+  href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+  rel="stylesheet"
+/>
+
+
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,7 +32,7 @@
   <body>
     <!-- ===================== EVENT DETAILS MODAL ===================== -->
     <div id="eventModal" class="event-modal hidden">
-      <div class="event-modal-content glass" data-aos="zoom-in">
+      <div class="event-modal-content glass" data-aos="fade-up">
         <button
           id="closeEventModal"
           aria-label="Close"
@@ -147,74 +154,94 @@
   </div>
 </nav>
 
-    <!-- ===================== HERO SECTION ===================== -->
+<!-- ===================== HERO SECTION ===================== -->
 <header
   class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-28 pb-16 md:pt-24 md:pb-20 hero-bg"
 >
-      <div data-aos="zoom-out" data-aos-duration="1200">
-        <!-- Institution block -->
-        <p class="text-sm md:text-base tracking-[0.4em] text-sandstone/90 mb-3 uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          VIDYA VIKAS MANDAL'S
-        </p>
+  <!-- hero atmosphere particles -->
+  <div class="hero-particles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
 
-<div class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-4">
-  <img
-    src="./logos/CollegeLogo.jpeg"
-    alt="Vidya Vikas Mandal – Shree Damodar College of Commerce & Economics"
-    class="w-16 h-16 md:w-20 md:h-20 object-contain bg-white/90 rounded-md shadow-lg mb-2 md:mb-0"
-  />
-  <p
-    class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-[0.18em] sm:tracking-[0.22em] md:tracking-[0.24em] uppercase hero-sub-glow leading-snug text-center"
-  >
-    SHREE DAMODAR COLLEGE OF COMMERCE &amp; ECONOMICS
-  </p>
-</div>
+  <!-- hero content shell with entrance animation -->
+  <div class="hero-content-shell" data-aos="fade-up" data-aos-duration="1200">
+    <!-- Institution block -->
+    <p
+      class="text-sm md:text-base tracking-[0.4em] text-sandstone/90 mb-3 uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      VIDYA VIKAS MANDAL'S
+    </p>
 
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-4"
+    >
+      <img
+        src="./logos/CollegeLogo.jpeg"
+        alt="Vidya Vikas Mandal – Shree Damodar College of Commerce & Economics"
+        class="w-16 h-16 md:w-20 md:h-20 object-contain bg-white/90 rounded-md shadow-lg mb-2 md:mb-0"
+      />
+      <p
+        class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-[0.18em] sm:tracking-[0.22em] md:tracking-[0.24em] uppercase hero-sub-glow leading-snug text-center"
+      >
+        SHREE DAMODAR COLLEGE OF COMMERCE &amp; ECONOMICS
+      </p>
+    </div>
 
-        <p class="text-base md:text-lg text-sandstone mb-3 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          MARGAO – GOA
-        </p>
+    <p
+      class="text-base md:text-lg text-sandstone mb-3 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      MARGAO – GOA
+    </p>
 
-        <p class="text-sm md:text-base text-gray-100 mb-1 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          AFFILIATED TO GOA UNIVERSITY
-        </p>
+    <p
+      class="text-sm md:text-base text-gray-100 mb-1 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      AFFILIATED TO GOA UNIVERSITY
+    </p>
 
-        <p class="text-sm md:text-base text-gray-100 mb-5 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          ACCREDITED BY NAAC WITH ‘A’ GRADE
-        </p>
+    <p
+      class="text-sm md:text-base text-gray-100 mb-5 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      ACCREDITED BY NAAC WITH ‘A’ GRADE
+    </p>
 
-        <p class="text-sm md:text-base text-sandstone mb-5 tracking-[0.28em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          STUDENTS’ COUNCIL, CULTURAL COUNCIL &amp; SPORTS COUNCIL
-        </p>
+    <p
+      class="text-sm md:text-base text-sandstone mb-5 tracking-[0.28em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      STUDENTS’ COUNCIL, CULTURAL COUNCIL &amp; SPORTS COUNCIL
+    </p>
 
-        <p class="text-sm md:text-base text-sandstone/90 mb-8 tracking-[0.38em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
-          PRESENTS
-        </p>
+    <p
+      class="text-sm md:text-base text-sandstone/90 mb-8 tracking-[0.38em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
+    >
+      PRESENTS
+    </p>
 
-        <!-- Main title -->
-        <h1
-          class="text-5xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-        >
-          RISE OF <span class="text-copper">INDUS</span>
-        </h1>
+    <!-- Main title -->
+    <h1
+      class="hero-title text-5xl md:text-8xl font-bold text-white mb-6 leading-tight"
+    >
+      RISE OF <span class="text-copper">INDUS</span>
+    </h1>
 
-        <p
-          class="max-w-2xl mx-auto text-gray-200 text-lg md:text-xl mb-10 italic drop-shadow-[0_0_16px_rgba(0,0,0,0.9)]"
-        >
-          "A journey from our roots to the future we dream of."
-        </p>
+    <p
+      class="max-w-2xl mx-auto text-gray-200 text-lg md:text-xl mb-10 italic drop-shadow-[0_0_16px_rgba(0,0,0,0.9)]"
+    >
+      "A journey from our roots to the future we dream of."
+    </p>
 
-        <div class="flex space-x-4 justify-center">
-          <a id="exploreCivilizationBtn" href="#events" class="btn-copper">
-            EXPLORE CIVILIZATION
-          </a>
-        </div>
-      </div>
-    </header>
+    <div class="flex space-x-4 justify-center">
+      <a id="exploreCivilizationBtn" href="#events" class="btn-copper">
+        EXPLORE CIVILIZATION
+      </a>
+    </div>
+  </div>
+</header>
+
 
     <!-- ===================== GENERAL GUIDELINES SECTION ===================== -->
     <section id="rules" class="py-24 px-6 max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold section-title" data-aos="fade-right">
+      <h2 class="text-4xl font-bold section-title" data-aos="fade-up">
         General Guidelines
       </h2>
 
@@ -271,7 +298,7 @@
         <!-- 3-column wrapper: Pre / On-stage / Off-stage -->
         <div class="event-columns">
           <!-- Pre-Events -->
-          <div data-aos="fade-right" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h3 class="event-group">Pre-Events</h3>
             <div class="event-grid">
               <div class="event-card" data-event="frames">
@@ -310,7 +337,7 @@
           </div>
 
           <!-- Off-Stage Events -->
-          <div data-aos="fade-left" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <h3 class="event-group">Off-Stage Events</h3>
             <div class="event-grid">
               <div class="event-card" data-event="entry">Entry Parade</div>
@@ -342,7 +369,7 @@
         <!-- Top-level scoring rules -->
         <div class="grid lg:grid-cols-2 gap-8 mb-12">
           <!-- Participation & time rules -->
-          <div class="glass p-6 card-float" data-aos="fade-right">
+          <div class="glass p-6 card-float" data-aos="fade-up">
             <h3 class="text-2xl font-bold text-copper mb-4">
               Core Regulations
             </h3>
@@ -365,7 +392,7 @@
           </div>
 
           <!-- Early bird + Joker rules -->
-          <div class="glass p-6 card-float" data-aos="fade-left">
+          <div class="glass p-6 card-float" data-aos="fade-up">
             <h3 class="text-2xl font-bold text-copper mb-4">
               Bonus &amp; Joker Rules
             </h3>
@@ -407,7 +434,7 @@
         </div>
 
         <!-- Tier points table -->
-        <div class="glass p-6 card-float mb-12" data-aos="zoom-in">
+        <div class="glass p-6 card-float mb-12" data-aos="fade-up">
           <h3 class="text-2xl font-bold text-copper mb-4">
             Tier-wise Points per Position
           </h3>
@@ -553,7 +580,7 @@
 
         <div class="grid lg:grid-cols-2 gap-12">
           <!-- Day 1 schedule -->
-          <div class="glass p-6 rounded-xl card-float" data-aos="fade-right">
+          <div class="glass p-6 rounded-xl card-float" data-aos="fade-up">
             <h3
               class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2"
             >
@@ -634,7 +661,7 @@
           </div>
 
           <!-- Day 2 schedule -->
-          <div class="glass p-6 rounded-xl card-float" data-aos="fade-left">
+          <div class="glass p-6 rounded-xl card-float" data-aos="fade-up">
             <h3
               class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2"
             >
@@ -711,7 +738,7 @@
     <section id="registration" class="py-24 px-6 text-center section-city-bg">
       <div
         class="max-w-4xl mx-auto glass p-12 rounded-3xl card-float"
-        data-aos="zoom-in"
+        data-aos="fade-up"
       >
         <h2 class="text-4xl font-bold mb-6 uppercase">Join the Civilization</h2>
         <p class="text-xl text-sandstone mb-8">
