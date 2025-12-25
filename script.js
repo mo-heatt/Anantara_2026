@@ -614,39 +614,41 @@ const modal = document.getElementById("eventModal");
 const modalBody = document.getElementById("eventModalBody");
 const closeModalBtn = document.getElementById("closeEventModal");
 
-eventCards.forEach(card => {
-  card.addEventListener("click", () => {
-    const key = card.dataset.event;
-    const content = eventDetails[key];
-    if (!content) return;
+if (modal && modalBody && eventCards.length) {
+  // Open modal on card click
+  eventCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const key = card.dataset.event;
+      const content = eventDetails[key];
+      if (!content) return;
 
-    modalBody.innerHTML = content;
-    modal.classList.remove("hidden");
+      modalBody.innerHTML = content;
+      modal.classList.remove("hidden");
+    });
   });
-});
 
-// Close button handler
-if (closeModalBtn) {
-  closeModalBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-}
+  // Close button handler
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+  }
 
-// Close modal when clicking outside the content
-if (modal) {
-  modal.addEventListener("click", event => {
+  // Close modal when clicking outside the content
+  modal.addEventListener("click", (event) => {
     if (event.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+
+  // Close modal on Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
       modal.classList.add("hidden");
     }
   });
 }
 
-// Close modal on Escape key
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") {
-    modal.classList.add("hidden");
-  }
-});
 
 // Mobile navbar toggle
 const mobileBtn = document.getElementById("mobileMenuBtn");

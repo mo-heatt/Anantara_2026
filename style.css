@@ -164,114 +164,6 @@ h2 {
   }
 }
 
-/* ===================== NAVBAR LOGO SIZING ===================== */
-.logo-nav {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, #ffffff33, transparent 60%);
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
-}
-
-.logo-nav--mono {
-  border-radius: 8px;
-  background: #ffffff;
-  padding: 3px;
-}
-
-@media (max-width: 480px) {
-  .logo-nav {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/* ===================== SECTION BACKGROUND OVERLAYS ===================== */
-
-/* General Guidelines */
-#rules {
-  position: relative;
-  overflow: hidden;
-}
-
-#rules::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./public/backgrounds/bg-rules-grid.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.18;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Events of the Indus Realm */
-#events {
-  position: relative;
-  overflow: hidden;
-}
-
-#events::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./public/backgrounds/bg-events-hud.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.22;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Scoring System */
-#scoring {
-  position: relative;
-  overflow: hidden;
-}
-
-#scoring::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./public/backgrounds/bg-scoring-dashboard.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.2;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Chronicle of Events (Schedule) */
-#schedule {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Registration / CTA */
-#registration {
-  position: relative;
-  overflow: hidden;
-}
-
-#registration::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./public/backgrounds/bg-registration-city.png");
-  background-size: cover;
-  background-position: center bottom;
-  opacity: 0.35;
-  mix-blend-mode: screen;
-  filter: blur(1px);
-  pointer-events: none;
-  z-index: -1;
-}
-
 /* Keep content above overlays */
 #rules > *,
 #events > *,
@@ -421,28 +313,12 @@ h2 {
   font-weight: 500;
 }
 
-
-
-/* hide city-strip between hero and content (kept for structure) */
-.city-strip {
-  height: 0;
-  overflow: hidden;
-}
-
 /* small spacing above guidelines */
 #rules {
   padding-top: 2rem;
 }
 
 /* ===================== HERO GLOW EFFECTS ===================== */
-.hero-title-glow {
-  text-shadow:
-    0 0 12px rgba(0, 0, 0, 0.9),
-    0 0 28px rgba(184, 115, 51, 0.7),
-    0 0 60px rgba(184, 115, 51, 0.6);
-  animation: heroGlowPulse 3.5s ease-in-out infinite;
-}
-
 .hero-sub-glow {
   text-shadow:
     0 0 8px rgba(0, 0, 0, 0.85),
@@ -949,12 +825,18 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  #rules,
   #events,
   #scoring,
   #schedule,
   #registration {
     min-height: 60vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #rules {
+    padding-top: 4rem;   /* was py-24 ≈ 6rem top */
+    padding-bottom: 4rem;/* was 6rem bottom */
   }
 }
 

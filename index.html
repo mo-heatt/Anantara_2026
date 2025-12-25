@@ -1,242 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta & basic setup -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ANANTARA 2026 | Rise of Indus</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <!-- Meta & basic setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANANTARA 2026 | Rise of Indus</title>
 
-    <!-- AOS (scroll animations) CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- AOS (scroll animations) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Black Ops One Font -->
-    <link
-  href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-  rel="stylesheet"
-/>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Black Ops One Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
 
 
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <!-- ===================== EVENT DETAILS MODAL ===================== -->
-    <div id="eventModal" class="event-modal hidden">
-      <div class="event-modal-content glass" data-aos="fade-up">
-        <button
-          id="closeEventModal"
-          aria-label="Close"
-          class="text-2xl absolute top-4 right-6 text-gray-400 hover:text-white"
-        >
-          ✕
-        </button>
+<body>
+  <!-- ===================== EVENT DETAILS MODAL ===================== -->
+  <div id="eventModal" class="event-modal hidden">
+    <div class="event-modal-content glass" data-aos="fade-up">
+      <button id="closeEventModal" aria-label="Close"
+        class="text-2xl absolute top-4 right-6 text-gray-400 hover:text-white">
+        ✕
+      </button>
+      <div id="eventModalBody" class="space-y-4 text-left text-sm md:text-base leading-relaxed"></div>
+    </div>
+  </div>
+
+  <!-- ===================== GLOBAL BACKGROUND LAYERS ===================== -->
+  <!-- animated gradient + particles -->
+  <div class="bg-animate"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- cinematic image layers -->
+  <div class="cinema-layer cinema-guardian"></div>
+  <div class="cinema-layer cinema-city"></div>
+
+  <!-- glowing sigils -->
+  <div class="sigil sigil-top"></div>
+  <div class="sigil sigil-mid"></div>
+  <div class="sigil sigil-bottom"></div>
+
+  <nav class="fixed top-0 w-full z-50 glass py-1.5 px-2 md:px-3 border-b border-white/10">
+    <div class="w-full flex items-center justify-between gap-2">
+      <!-- Left: logo + small text -->
+      <div class="flex items-center flex-shrink-0 gap-1.5">
+        <img src="./logos/InstitutionLogo.jpeg" alt="Institution's Innovation Council" class="w-7 h-7 object-contain" />
+        <span class="text-[0.55rem] xs:text-[0.6rem] text-gray-300 leading-tight uppercase tracking-[0.16em]">
+          Institution's<br />Innovation Council
+        </span>
+      </div>
+
+      <!-- Center: title (takes remaining space, truncated if needed) -->
+      <div class="flex-1 flex justify-center px-1 min-w-0">
+        <span
+          class="text-[0.8rem] xs:text-sm md:text-lg font-bold font-orbitron text-white tracking-[0.22em] md:tracking-[0.32em] uppercase truncate text-center">
+          ANANTARA <span class="text-copper">2026</span>
+        </span>
+      </div>
+
+      <!-- Right: hamburger (mobile) or links (desktop) -->
+      <div class="flex items-center flex-shrink-0">
+        <!-- Desktop links -->
         <div
-          id="eventModalBody"
-          class="space-y-4 text-left text-sm md:text-base leading-relaxed"
-        ></div>
+          class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]">
+          <a href="#rules" class="nav-link">Guidelines</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#scoring" class="nav-link">Scoring</a>
+          <a href="#schedule" class="nav-link">Schedule</a>
+          <a href="#registration"
+            class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300">
+            Register
+          </a>
+        </div>
+
+        <!-- Clean hamburger icon (mobile only) -->
+        <button id="mobileMenuBtn"
+          class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-black"
+          aria-label="Open main menu">
+          <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16" />
+            <path d="M4 12h16" />
+            <path d="M4 17h16" />
+          </svg>
+        </button>
       </div>
     </div>
 
-    <!-- ===================== GLOBAL BACKGROUND LAYERS ===================== -->
-    <!-- animated gradient + particles -->
-    <div class="bg-animate"></div>
-    <div class="grid-overlay"></div>
-
-    <!-- cinematic image layers -->
-    <div class="cinema-layer cinema-guardian"></div>
-    <div class="cinema-layer cinema-city"></div>
-
-    <!-- glowing sigils -->
-    <div class="sigil sigil-top"></div>
-    <div class="sigil sigil-mid"></div>
-    <div class="sigil sigil-bottom"></div>
-
-<nav
-  class="fixed top-0 w-full z-50 glass py-1.5 px-2 md:px-3 border-b border-white/10"
->
-  <div class="w-full flex items-center justify-between gap-2">
-    <!-- Left: logo + small text -->
-    <div class="flex items-center flex-shrink-0 gap-1.5">
-      <img
-        src="./logos/InstitutionLogo.jpeg"
-        alt="Institution's Innovation Council"
-        class="w-7 h-7 object-contain"
-      />
-      <span
-        class="text-[0.55rem] xs:text-[0.6rem] text-gray-300 leading-tight uppercase tracking-[0.16em]"
-      >
-        Institution's<br />Innovation Council
-      </span>
-    </div>
-
-    <!-- Center: title (takes remaining space, truncated if needed) -->
-    <div
-      class="flex-1 flex justify-center px-1 min-w-0"
-    >
-      <span
-        class="text-[0.8rem] xs:text-sm md:text-lg font-bold font-orbitron text-white tracking-[0.22em] md:tracking-[0.32em] uppercase truncate text-center"
-      >
-        ANANTARA <span class="text-copper">2026</span>
-      </span>
-    </div>
-
-    <!-- Right: hamburger (mobile) or links (desktop) -->
-    <div class="flex items-center flex-shrink-0">
-      <!-- Desktop links -->
-      <div
-        class="hidden md:flex items-center space-x-3 uppercase text-[0.6rem] md:text-xs font-bold tracking-[0.18em]"
-      >
-        <a href="#rules" class="nav-link">Guidelines</a>
-        <a href="#events" class="nav-link">Events</a>
-        <a href="#scoring" class="nav-link">Scoring</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a
-          href="#registration"
-          class="text-copper border border-copper px-3 py-1 hover:bg-copper hover:text-white transition-all duration-300"
-        >
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="md:hidden hidden mt-1 pb-3 border-t border-white/10 bg-black/80 backdrop-blur-lg">
+      <div class="px-4 pt-3 space-y-2 text-[0.7rem] uppercase tracking-[0.2em] font-semibold">
+        <a href="#rules" class="block nav-link-mobile">Guidelines</a>
+        <a href="#events" class="block nav-link-mobile">Events</a>
+        <a href="#scoring" class="block nav-link-mobile">Scoring</a>
+        <a href="#schedule" class="block nav-link-mobile">Schedule</a>
+        <a href="#registration"
+          class="block text-copper border border-copper text-center px-3 py-2 mt-2 hover:bg-copper hover:text-white transition-all duration-300">
           Register
         </a>
       </div>
-
-      <!-- Clean hamburger icon (mobile only) -->
-      <button
-        id="mobileMenuBtn"
-        class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md text-gray-200 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-black"
-        aria-label="Open main menu"
-      >
-        <svg
-          id="hamburgerIcon"
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        >
-          <path d="M4 7h16" />
-          <path d="M4 12h16" />
-          <path d="M4 17h16" />
-        </svg>
-      </button>
     </div>
-  </div>
+  </nav>
+  <main>
+    <!-- ===================== HERO SECTION ===================== -->
+    <header
+      class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-28 pb-16 md:pt-24 md:pb-20 hero-bg">
+      <!-- hero atmosphere particles -->
+      <div class="hero-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
 
-  <!-- Mobile menu panel -->
-  <div
-    id="mobileMenu"
-    class="md:hidden hidden mt-1 pb-3 border-t border-white/10 bg-black/80 backdrop-blur-lg"
-  >
-    <div
-      class="px-4 pt-3 space-y-2 text-[0.7rem] uppercase tracking-[0.2em] font-semibold"
-    >
-      <a href="#rules" class="block nav-link-mobile">Guidelines</a>
-      <a href="#events" class="block nav-link-mobile">Events</a>
-      <a href="#scoring" class="block nav-link-mobile">Scoring</a>
-      <a href="#schedule" class="block nav-link-mobile">Schedule</a>
-      <a
-        href="#registration"
-        class="block text-copper border border-copper text-center px-3 py-2 mt-2 hover:bg-copper hover:text-white transition-all duration-300"
-      >
-        Register
-      </a>
-    </div>
-  </div>
-</nav>
+      <!-- hero content shell with entrance animation -->
+      <div class="hero-content-shell" data-aos="fade-up" data-aos-duration="1200">
+        <!-- Institution block -->
+        <p
+          class="text-sm md:text-base tracking-[0.4em] text-sandstone/90 mb-3 uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          VIDYA VIKAS MANDAL'S
+        </p>
 
-<!-- ===================== HERO SECTION ===================== -->
-<header
-  class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-28 pb-16 md:pt-24 md:pb-20 hero-bg"
->
-  <!-- hero atmosphere particles -->
-  <div class="hero-particles" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span>
-  </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-4">
+          <img src="./logos/CollegeLogo.jpeg" alt="Vidya Vikas Mandal – Shree Damodar College of Commerce & Economics"
+            class="w-16 h-16 md:w-20 md:h-20 object-contain bg-white/90 rounded-md shadow-lg mb-2 md:mb-0" />
+          <p
+            class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-[0.18em] sm:tracking-[0.22em] md:tracking-[0.24em] uppercase hero-sub-glow leading-snug text-center">
+            SHREE DAMODAR COLLEGE OF COMMERCE &amp; ECONOMICS
+          </p>
+        </div>
 
-  <!-- hero content shell with entrance animation -->
-  <div class="hero-content-shell" data-aos="fade-up" data-aos-duration="1200">
-    <!-- Institution block -->
-    <p
-      class="text-sm md:text-base tracking-[0.4em] text-sandstone/90 mb-3 uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      VIDYA VIKAS MANDAL'S
-    </p>
+        <p
+          class="text-base md:text-lg text-sandstone mb-3 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          MARGAO – GOA
+        </p>
 
-    <div
-      class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mb-4"
-    >
-      <img
-        src="./logos/CollegeLogo.jpeg"
-        alt="Vidya Vikas Mandal – Shree Damodar College of Commerce & Economics"
-        class="w-16 h-16 md:w-20 md:h-20 object-contain bg-white/90 rounded-md shadow-lg mb-2 md:mb-0"
-      />
-      <p
-        class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-[0.18em] sm:tracking-[0.22em] md:tracking-[0.24em] uppercase hero-sub-glow leading-snug text-center"
-      >
-        SHREE DAMODAR COLLEGE OF COMMERCE &amp; ECONOMICS
-      </p>
-    </div>
+        <p
+          class="text-sm md:text-base text-gray-100 mb-1 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          AFFILIATED TO GOA UNIVERSITY
+        </p>
 
-    <p
-      class="text-base md:text-lg text-sandstone mb-3 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      MARGAO – GOA
-    </p>
+        <p
+          class="text-sm md:text-base text-gray-100 mb-5 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          ACCREDITED BY NAAC WITH ‘A’ GRADE
+        </p>
 
-    <p
-      class="text-sm md:text-base text-gray-100 mb-1 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      AFFILIATED TO GOA UNIVERSITY
-    </p>
+        <p
+          class="text-sm md:text-base text-sandstone mb-5 tracking-[0.28em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          STUDENTS’ COUNCIL, CULTURAL COUNCIL &amp; SPORTS COUNCIL
+        </p>
 
-    <p
-      class="text-sm md:text-base text-gray-100 mb-5 tracking-[0.24em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      ACCREDITED BY NAAC WITH ‘A’ GRADE
-    </p>
+        <p
+          class="text-sm md:text-base text-sandstone/90 mb-8 tracking-[0.38em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]">
+          PRESENTS
+        </p>
 
-    <p
-      class="text-sm md:text-base text-sandstone mb-5 tracking-[0.28em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      STUDENTS’ COUNCIL, CULTURAL COUNCIL &amp; SPORTS COUNCIL
-    </p>
+        <!-- Main title -->
+        <h1 class="hero-title text-5xl md:text-8xl font-bold text-white mb-6 leading-tight">
+          RISE OF <span class="text-copper">INDUS</span>
+        </h1>
 
-    <p
-      class="text-sm md:text-base text-sandstone/90 mb-8 tracking-[0.38em] uppercase hero-sub-glow drop-shadow-[0_0_24px_rgba(0,0,0,0.9)]"
-    >
-      PRESENTS
-    </p>
+        <p
+          class="max-w-2xl mx-auto text-gray-200 text-lg md:text-xl mb-10 italic drop-shadow-[0_0_16px_rgba(0,0,0,0.9)]">
+          "A journey from our roots to the future we dream of."
+        </p>
 
-    <!-- Main title -->
-    <h1
-      class="hero-title text-5xl md:text-8xl font-bold text-white mb-6 leading-tight"
-    >
-      RISE OF <span class="text-copper">INDUS</span>
-    </h1>
-
-    <p
-      class="max-w-2xl mx-auto text-gray-200 text-lg md:text-xl mb-10 italic drop-shadow-[0_0_16px_rgba(0,0,0,0.9)]"
-    >
-      "A journey from our roots to the future we dream of."
-    </p>
-
-    <div class="flex space-x-4 justify-center">
-      <a id="exploreCivilizationBtn" href="#events" class="btn-copper">
-        EXPLORE CIVILIZATION
-      </a>
-    </div>
-  </div>
-</header>
+        <div class="flex space-x-4 justify-center">
+          <a id="exploreCivilizationBtn" href="#events" class="btn-copper">
+            EXPLORE CIVILIZATION
+          </a>
+        </div>
+      </div>
+    </header>
 
 
     <!-- ===================== GENERAL GUIDELINES SECTION ===================== -->
@@ -253,33 +197,21 @@
           </p>
         </div>
 
-        <div
-          class="glass p-6 card-float"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-copper font-bold mb-3 uppercase">Teams</h3>
           <p class="text-sm text-gray-400">
             Max 80 participants. Mandatory Teacher-in-charge presence.
           </p>
         </div>
 
-        <div
-          class="glass p-6 card-float"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-copper font-bold mb-3 uppercase">Conduct</h3>
           <p class="text-sm text-gray-400">
             Strictly no revealing college names. No fire or water on stage.
           </p>
         </div>
 
-        <div
-          class="glass p-6 card-float"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="300">
           <h3 class="text-copper font-bold mb-3 uppercase">Penalties</h3>
           <p class="text-sm text-gray-400">
             -1000 pts for missing events. -200 pts for time limit breaches.
@@ -359,10 +291,7 @@
     <!-- ===================== SCORING SYSTEM SECTION ===================== -->
     <section id="scoring" class="py-24 px-6 section-city-bg">
       <div class="max-w-7xl mx-auto">
-        <h2
-          class="text-4xl font-bold section-title text-center mb-12"
-          data-aos="fade-up"
-        >
+        <h2 class="text-4xl font-bold section-title text-center mb-12" data-aos="fade-up">
           Rules &amp; Scoring System
         </h2>
 
@@ -375,9 +304,7 @@
             </h3>
             <ul class="space-y-3 text-sm text-gray-300">
               <li>
-                <span class="font-semibold text-sandstone"
-                  >Compulsory Participation:</span
-                >
+                <span class="font-semibold text-sandstone">Compulsory Participation:</span>
                 Participation in all events is mandatory. Failure to participate
                 in any event will result in a deduction of
                 <span class="text-copper font-semibold">1000 points</span>.
@@ -398,9 +325,7 @@
             </h3>
             <ul class="space-y-3 text-sm text-gray-300">
               <li>
-                <span class="font-semibold text-sandstone"
-                  >Early Bird Points (per day):</span
-                >
+                <span class="font-semibold text-sandstone">Early Bird Points (per day):</span>
                 Full team arrival at the venue earns:
                 <br />
                 <span class="ml-4 block">
@@ -413,9 +338,7 @@
                 </span>
               </li>
               <li>
-                <span class="font-semibold text-sandstone"
-                  >Joker Placement:</span
-                >
+                <span class="font-semibold text-sandstone">Joker Placement:</span>
                 Joker must be placed at the registration counter during
                 registration and can be used only on a
                 <span class="text-copper font-semibold">Supreme Tier</span>
@@ -440,9 +363,7 @@
           </h3>
           <div class="overflow-x-auto text-sm">
             <table class="min-w-full text-left text-gray-200 scoring-table">
-              <thead
-                class="text-xs uppercase text-sandstone border-b border-white/10"
-              >
+              <thead class="text-xs uppercase text-sandstone border-b border-white/10">
                 <tr>
                   <th class="py-2 pr-4">Tier</th>
                   <th class="py-2 px-4">1st Place</th>
@@ -491,11 +412,7 @@
         <!-- Events mapped to tiers -->
         <div class="grid lg:grid-cols-4 gap-6">
           <!-- Supreme Tier events -->
-          <div
-            class="glass p-6 card-float"
-            data-aos="fade-up"
-            data-aos-delay="0"
-          >
+          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="0">
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Supreme Tier
             </h3>
@@ -508,11 +425,7 @@
           </div>
 
           <!-- Elite Tier events -->
-          <div
-            class="glass p-6 card-float"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="100">
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Elite Tier
             </h3>
@@ -525,11 +438,7 @@
           </div>
 
           <!-- Warrior Tier events -->
-          <div
-            class="glass p-6 card-float"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="200">
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Warrior Tier
             </h3>
@@ -547,11 +456,7 @@
           </div>
 
           <!-- Challenge Tier events -->
-          <div
-            class="glass p-6 card-float"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div class="glass p-6 card-float" data-aos="fade-up" data-aos-delay="300">
             <h3 class="text-xl font-bold text-copper mb-3 uppercase">
               Challenge Tier
             </h3>
@@ -571,19 +476,14 @@
     <!-- ===================== CHRONICLE OF EVENTS (SCHEDULE) ===================== -->
     <section id="schedule" class="py-24 px-6">
       <div class="max-w-7xl mx-auto">
-        <h2
-          class="text-4xl font-bold section-title text-center mb-12"
-          data-aos="fade-up"
-        >
+        <h2 class="text-4xl font-bold section-title text-center mb-12" data-aos="fade-up">
           Chronicle of Events
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-12">
           <!-- Day 1 schedule -->
           <div class="glass p-6 rounded-xl card-float" data-aos="fade-up">
-            <h3
-              class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2"
-            >
+            <h3 class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2">
               Day 1 - Jan 30
             </h3>
             <ul class="space-y-4 text-sm">
@@ -662,9 +562,7 @@
 
           <!-- Day 2 schedule -->
           <div class="glass p-6 rounded-xl card-float" data-aos="fade-up">
-            <h3
-              class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2"
-            >
+            <h3 class="text-2xl font-bold mb-6 text-copper border-b border-copper/30 pb-2">
               Day 2 - Jan 31
             </h3>
             <ul class="space-y-4 text-sm">
@@ -736,10 +634,7 @@
 
     <!-- ===================== REGISTRATION / CTA SECTION ===================== -->
     <section id="registration" class="py-24 px-6 text-center section-city-bg">
-      <div
-        class="max-w-4xl mx-auto glass p-12 rounded-3xl card-float"
-        data-aos="fade-up"
-      >
+      <div class="max-w-4xl mx-auto glass p-12 rounded-3xl card-float" data-aos="fade-up">
         <h2 class="text-4xl font-bold mb-6 uppercase">Join the Civilization</h2>
         <p class="text-xl text-sandstone mb-8">
           Registration Fee: ₹3,000 (Inclusive of GST)
@@ -751,24 +646,57 @@
           <p class="text-sm">Number: 3607968937 | IFSC: CBIN0284050</p>
         </div>
 
-        <button
-          onclick="openRegistrationForm()"
-          class="btn-copper brochure-pulse"
-        >
+        <button onclick="openRegistrationForm()" class="btn-copper brochure-pulse">
           REGISTER NOW
         </button>
       </div>
     </section>
+  </main>
 
-    <!-- ===================== FOOTER ===================== -->
-    <footer
-      class="py-12 text-center text-gray-500 text-xs tracking-widest uppercase"
-    >
-      <p>© 2026 Anantara | Rise of Indus | Shree Damodar College</p>
-    </footer>
+  <footer class="py-10 px-4 text-center text-gray-400 text-xs tracking-widest">
+    <p class="uppercase mb-3">
+      © 2026 Anantara | Rise of Indus | Shree Damodar College
+    </p>
 
-    <!-- ===================== SCRIPTS ===================== -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-[0.7rem]">
+      <span class="uppercase tracking-[0.2em]">
+        Designed &amp; Developed by <span class="text-copper font-semibold">Mohit Kumawat</span>
+      </span>
+
+      <div class="flex items-center gap-3">
+        <!-- GitHub -->
+        <a href="https://github.com/mo-heatt" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 hover:text-copper transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"
+            aria-hidden="true">
+            <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.773 8.205 11.366.6.111.82-.261.82-.58
+               0-.287-.011-1.244-.017-2.256-3.338.726-4.043-1.609-4.043-1.609-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73
+               1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.419-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93
+               0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.46 11.46 0 0 1 3.003-.404
+               c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.243 2.873.119 3.176.77.84 1.235 1.911
+               1.235 3.221 0 4.61-2.805 5.624-5.476 5.921.43.372.823 1.103.823 2.223 0 1.606-.015 2.901-.015 3.293
+               0 .321.216.697.825.579C20.565 22.27 24 17.787 24 12.5 24 5.87 18.627 0.5 12 0.5Z" />
+          </svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/mohitkumarkumawat/" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 hover:text-copper transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"
+            aria-hidden="true">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.32 8.25h4.36V23H.32V8.25ZM8.34 8.25h4.18v2.01h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V23h-4.36v-7.5c0-1.79-.03-4.09-2.49-4.09-2.5 0-2.88 1.94-2.88 3.96V23H8.34V8.25Z" />
+          </svg>
+          <span class="hidden sm:inline">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
