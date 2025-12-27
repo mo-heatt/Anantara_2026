@@ -419,15 +419,24 @@ h2 {
 
 
 /* Cinematic hero title */
+/* Cinematic hero title */
 .hero-title {
-    font-family: "Black Ops One", system-ui, sans-serif;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-    padding-inline: 0.4em;
-    animation: heroTitleGlow 4s ease-in-out infinite,
-               heroTitleFloat 10s ease-in-out infinite;
+  font-family: "Cinzel Decorative", system-ui, sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding-inline: 0.4em;
+  animation: heroTitleGlow 4s ease-in-out infinite,
+             heroTitleFloat 10s ease-in-out infinite;
+}
+
+.text-copper {
+  color: var(--copper);
+  background: linear-gradient(135deg, #f6e3c5, #d4a063, #b87333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* subtle scanline highlight across the text */
