@@ -703,13 +703,14 @@ h2 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to bottom, rgba(4, 13, 14, 0.7), rgba(4, 13, 14, 0.85)),
+    /* lighter gradient so image shows through */
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.35), rgba(4, 13, 14, 0.6)),
     url("./public/backgrounds/bg-rules-indus-future.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.35;
-  mix-blend-mode: screen;
+  opacity: 0.7;              /* was 0.35 */
+  mix-blend-mode: normal;    /* remove screen */
   pointer-events: none;
   z-index: -1;
 }
@@ -725,13 +726,13 @@ h2 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to bottom, rgba(4, 13, 14, 0.6), rgba(4, 13, 14, 0.9)),
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.3), rgba(4, 13, 14, 0.6)),
     url("./public/backgrounds/bg-events-indus-plaza.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.4;
-  mix-blend-mode: screen;
+  opacity: 0.7;              /* was 0.4 */
+  mix-blend-mode: normal;    /* remove screen */
   pointer-events: none;
   z-index: -1;
 }
@@ -747,13 +748,13 @@ h2 {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to bottom, rgba(4, 13, 14, 0.85), rgba(4, 13, 14, 0.95)),
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.45), rgba(4, 13, 14, 0.75)),
     url("./public/backgrounds/bg-scoring-hud-tablet.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.45;
-  mix-blend-mode: screen;
+  opacity: 0.75;             /* was 0.45 */
+  mix-blend-mode: normal;    /* remove screen */
   pointer-events: none;
   z-index: -1;
 }
