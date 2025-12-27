@@ -1,5 +1,5 @@
 // ===================== AOS INITIALIZATION & PARALLAX =====================
-// Sets up AOS scroll animations and a simple scroll-based parallax
+// Sets up AOS scroll animations, parallax, and storyline reveal
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init({
     duration: 1000,
@@ -20,7 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
       city.style.transform = `translate3d(0, ${y * -0.02}px, 0)`;
     }
   });
+
+  // NEW: storyline reveal
+  const storylineEl = document.querySelector(".storyline-text");
+  if (storylineEl) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            storylineEl.classList.add("is-visible");
+            observer.unobserve(storylineEl);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(storylineEl);
+  }
 });
+
 
 // ===================== NAVBAR BACKGROUND ON SCROLL =====================
 // Darkens the navbar background after scrolling down a bit
