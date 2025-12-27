@@ -416,9 +416,6 @@ h2 {
     0 0 18px rgba(0, 255, 255, 0.35);
 }
 
-
-
-/* Cinematic hero title */
 /* Cinematic hero title */
 .hero-title {
   font-family: "Cinzel Decorative", system-ui, sans-serif;
@@ -634,7 +631,6 @@ h2 {
 }
 
 /* ===================== REGISTRATION SECTION FIXES ===================== */
-
 /* Registration heading: consistent, clean wrapping on all screens */
 #registration h2 {
   text-align: center;
@@ -666,9 +662,42 @@ h2 {
   }
 }
 
-/* ===================== SCORING SECTION ===================== */
+/* Storyline section overlay – like rules/events/scoring */
+#storyline {
+  position: relative;
+  overflow: hidden;
+}
 
-/* Extra styling for the tier points table */
+#storyline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(4, 13, 14, 0.35), rgba(4, 13, 14, 0.7)),
+    url("./public/backgrounds/bg-storyline.jpg"); /* soft, behind glass card */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.55;
+  mix-blend-mode: normal;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* keep content above overlay */
+#storyline > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* inner card uses same image but sharper */
+.bg-storyline {
+  background-image: url("./public/backgrounds/bg-storyline.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===================== SCORING SECTION ===================== */
 .scoring-table {
   border-collapse: collapse;
   width: 100%;
