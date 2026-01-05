@@ -592,7 +592,7 @@ const eventDetails = {
 
   treasure: `
     <h2>Treasure Hunt</h2>
-    <p><strong>Format:</strong> 5-round outdoor hunt</p>
+    <p><strong>Format:</strong> 4-round outdoor hunt</p>
 
     <h3>Rules</h3>
     <ul>
@@ -621,10 +621,12 @@ const eventDetails = {
 
   stones: `
     <h2>Seven Stones</h2>
-    <p><strong>Participants:</strong> 2 per college</p>
+    <p><strong>Participants:</strong> 7 players in each team</p>
 
     <h3>Rules</h3>
     <ul>
+      <li>Two teams: Attack and Defence</li>
+      <li>Stack 7 stones in the center
       <li>Attacking team gets 3 chances to hit stones with the ball.</li>
       <li>After stones fall, attackers must rebuild the stack.</li>
       <li>Defenders try to hit attackers below shoulder.</li>
