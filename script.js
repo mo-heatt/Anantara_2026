@@ -213,6 +213,28 @@ const eventDetails = {
     </ul>
   `,
 
+  photography:`
+  <h2>Event Day Capture</h2>
+
+  <h3>Rules</h3>
+  <ul>
+    <li>Photo must be clicked on the day of the event only.</li>
+    <li>Each photo should clearly represent or promote the event theme.</li>
+    <li>Photo submission must be completed on Day 1 before 5:00 PM.</li>
+    <li>Photos must be captured using a camera only.</li>
+    <li>No editing is allowed under any circumstances.</li>
+    <li>Submit the raw photo exactly as it was captured.</li>
+  </ul>
+
+  <h3>Judging Criteria</h3>
+    <ul>
+      <li>Theme relevance</li>
+      <li>Creativity</li>
+      <li>Composition</li>
+      <li>Overall Impact</li>
+    </ul>
+  `,
+
   // ON-STAGE EVENTS
   debate: `
     <h2>Indus Opinion Clash</h2>
