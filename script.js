@@ -109,16 +109,16 @@ const eventDetails = {
   frames: `
     <h2>Frames of Forgotten Valley</h2>
     <p><strong>Type:</strong> Reel Making (Pre-Event)</p>
-    <p><strong>Duration:</strong> Maximum 1 minute</p>
+    <p><strong>Duration:</strong> Maximum 1 minute 30 seconds</p>
 
     <h3>Rules</h3>
     <ul>
       <li>Create a video promoting Anantara in a humorous or funny manner.</li>
       <li>Do not mention your college name in the video.</li>
-      <li>Video length must not exceed 1 minute.</li>
+      <li>Video length must not exceed 1 minute 30 seconds.</li>
       <li>Use of inappropriate language leads to direct disqualification.</li>
       <li>Fake likes or any attempt to manipulate engagement will result in disqualification.</li>
-      <li>Videos must be submitted via email to anantara.2026sdcce@gmail.com by 18th January 2026, 12:00 PM.</li>
+      <li>Videos must be submitted via email to anantara.2026sdcce@gmail.com by 24th January 2026, 5:00 PM.</li>
     </ul>
 
     <h3>Judging Criteria</h3>
@@ -132,7 +132,7 @@ const eventDetails = {
 
   banners: `
     <h2>Banners of Harappan</h2>
-    <p><strong>Theme:</strong> Rise of Indus</p>
+    <p><strong>Theme:</strong>Artistic skills of Indus type</p>
 
     <h3>Rules</h3>
     <ul>
@@ -144,6 +144,8 @@ const eventDetails = {
       <li>Legacy call of the team must be written on the flag.</li>
       <li>Flag should be painted on cloth material.</li>
       <li>Dimensions: 100 cm (Width) × 75 cm (Height).</li>
+      <li>The same flag will be used for entry parade and must be submitted later</li>
+      <li>The given name provided by the host must be written on the flag</li>
     </ul>
 
     <h3>Judging Criteria</h3>
@@ -163,12 +165,13 @@ const eventDetails = {
 
     <h3>Rules</h3>
     <ul>
-      <li>Record a short video introducing the team in a fun, creative, and energetic manner.</li>
+      <li>Theme: Indus civilization to modern twist - Introduce the team</li>
+      <li>Lenght of the video must be between 3 to 5 minutes</li>
       <li>Do not reveal the college name; only the assigned team name may be used.</li>
       <li>Video should reflect positive spirit and creativity; humour must remain clean and respectful.</li>
       <li>No inappropriate language, vulgarity, or offensive gestures.</li>
       <li>Content must be original; plagiarised or copied content is not accepted.</li>
-      <li>Submit video via email to anantara.2026sdcce@gmail.com on or before 19th January 2026, 12:00 PM.</li>
+      <li>Submit video via email to anantara.2026sdcce@gmail.com on or before 20th January 2026, 5:00 PM.</li>
       <li>File name format: TeamName_IceBreaker_Anantara2026.</li>
       <li>Unsafe props or hazardous materials are strictly prohibited.</li>
     </ul>
@@ -189,10 +192,11 @@ const eventDetails = {
 
     <h3>Rules & Guidelines</h3>
     <ul>
-      <li>Model must be prepared at home and brought ready on event day.</li>
+      <li>Model must be prepared at home and brought ready on day one.</li>
+      <li>Same model will be used in the fashion show</li>
+      <li>Model can be collected on day two of fashion show (by 12:00 PM)</li>
       <li>Theme: creation must relate to the Rise of Indus (craftsmanship, lifestyle, motifs, ancient utilities, sustainability, etc.).</li>
       <li>Materials allowed: only waste materials (discarded, broken, old, or used items). No new materials allowed.</li>
-      <li>Prohibited: hazardous items, sharp objects, chemicals, flammable materials, pre-made or partially finished products.</li>
       <li>Product must be made entirely from waste; no assembling or altering at the venue.</li>
       <li>Theme connection must be clearly visible.</li>
       <li>Each team gets 2 minutes to explain concept, theme relevance, materials used, and purpose.</li>
@@ -214,19 +218,11 @@ const eventDetails = {
     <h2>Indus Opinion Clash</h2>
     <p><strong>Type:</strong> Debate Competition</p>
 
-    <h3>Sample Topics</h3>
-    <ul>
-      <li>Was the Indus Civilization more advanced than today’s world?</li>
-      <li>Order vs. Chaos: What truly drives a civilisation forward?</li>
-      <li>If the Indus people existed today, would they embrace or reject modern technology?</li>
-      <li>Does progress destroy culture or reshape it?</li>
-      <li>Is creativity more powerful than logic in building a civilisation?</li>
-    </ul>
-
     <h3>Team & Format</h3>
     <ul>
       <li>2 participants per team.</li>
       <li>Total time: 10 minutes.</li>
+      <li>Topics will be given on the spot</li>
       <li>Includes opening speech, arguments, rebuttals, and closing.</li>
     </ul>
 
@@ -249,7 +245,8 @@ const eventDetails = {
 
   sharktank: `
     <h2>Shark Tank</h2>
-    <p><strong>Theme:</strong> Ideas That Built Civilisations</p>
+    <p><strong>Theme:</strong> From Indus to Innovation</p>
+    <p>Business ideas inspired by asian wisdom, built for the future.</p>
 
     <h3>Team & Format</h3>
     <ul>
@@ -292,9 +289,9 @@ const eventDetails = {
     <h3>Format</h3>
     <ul>
       <li>3 rounds in total.</li>
-      <li>Round 1 – Day 1.</li>
-      <li>Round 2 – Day 1.</li>
-      <li>Final Round – Day 2.</li>
+      <li>Round 1 – Day 1(Physical).</li>
+      <li>Round 2 – Day 1(Physical).</li>
+      <li>Final Round – Day 2(ON STAGE).</li>
     </ul>
 
     <h3>Rules</h3>
@@ -302,6 +299,7 @@ const eventDetails = {
       <li>Audio for on-stage performances must be submitted prior.</li>
       <li>Vulgarity in costume or performance leads to immediate disqualification.</li>
       <li>Only one final winner will be crowned.</li>
+      <li>Only passing both the rounds will lead to the final round</li>
     </ul>
 
     <h3>Judging Criteria</h3>
@@ -335,18 +333,19 @@ const eventDetails = {
   `,
 
   mascot: `
-    <h2>Mascot – Warriors of the Indus Realm</h2>
-    <p><strong>Theme:</strong> Warriors of the Indus Realm</p>
+    <h2>Mascot – Indo Futuristic</h2>
     <p><strong>Team:</strong> 4 participants (1 Mascot + 3 Helpers)</p>
     <p><strong>Duration:</strong> 3 hours</p>
 
     <h3>Rules</h3>
     <ul>
       <li>Represent any warrior character using attire, body paint, props, etc.</li>
+      <li>Create a own name for the costume. Give your mascot its own identity</li>
       <li>Design and craft a complete warrior attire on the spot, from head to toe.</li>
       <li>No materials will be provided; teams must bring everything required.</li>
       <li>Mascot must remain in the crafted attire for the full time.</li>
       <li>Must not disturb other events.</li>
+      <li>Mascots are only permitted to be on the open ground and no where else</li>
       <li>No vulgar language, gestures, or obscene acts.</li>
       <li>On-stage round: each warrior showcases ability (dance, act, expression, pose, etc.).</li>
     </ul>
@@ -361,27 +360,25 @@ const eventDetails = {
   `,
 
   rap: `
-    <h2>Rap Battle</h2>
-    <p><strong>Type:</strong> Solo or Duo Rap Performance</p>
+    <h2>Solo Singing</h2>
+    <p><strong>Type:</strong> Solo Performance</p>
+    <p>Old 90's songs with tune of modern songs</p>
 
     <h3>Rules</h3>
     <ul>
-      <li>Each participant or duo gets 2–3 minutes.</li>
+      <li>Time limit is 3 to 5 minutes</li>
+      <li>No vulgar or offensive lyrics</li>
       <li>Lyrics must be original.</li>
-      <li>No vulgar words, abusive language, hate speech, or personal attacks.</li>
-      <li>Creative dissing is allowed only if respectful.</li>
-      <li>Beats / instrumentals / beatboxing / a cappella allowed; music must be submitted before the event.</li>
-      <li>No unsafe actions on stage (no fire, water, smoke, dangerous props, or damaging equipment).</li>
-      <li>No intoxicants during performance.</li>
+      <li>Language must be Hindi, English or Konkani only</li>
     </ul>
 
     <h3>Judging Criteria</h3>
     <ul>
-      <li>Lyrics</li>
-      <li>Flow &amp; delivery</li>
-      <li>Stage presence</li>
-      <li>Originality</li>
-      <li>Crowd engagement</li>
+      <li>Voice Quality</li>
+      <li>Creativity</li>
+      <li>Rythm and Coordination</li>
+      <li>Stage Presence</li>
+      <li>Overall Performance</li>
     </ul>
   `,
 
@@ -411,18 +408,20 @@ const eventDetails = {
 
   box: `
     <h2>Box Theatre</h2>
-    <p><strong>Theme:</strong> Rebirth of the Indus Civilization</p>
-    <p><strong>Team:</strong> 6–9 members</p>
+    <p><strong>Theme:</strong> Progress or Price</p>
+    <p><strong>Team:</strong> How development helps us but also destroys the nature and heritage.</p>
+    <p><strong>Team:</strong> How Indus culture faded with time.</p>
 
     <h3>Rules</h3>
     <ul>
-      <li>Performance must be based on the Rebirth of Indus theme.</li>
+      <li>6-9 members strictly</li>
+      <li>Violation of rules by any team will lead to direct disqualification</li>
       <li>Action happens inside or around the provided box.</li>
       <li>Act must be original, respectful, and connected to the theme.</li>
       <li>No vulgar words, abusive language, or hate content.</li>
       <li>Only safe props allowed; no fire, water, sharp objects, or dangerous items.</li>
       <li>Do not damage stage or provided props.</li>
-      <li>Time limit: 5–7 minutes.</li>
+      <li>Time limit: 8-10 minutes.</li>
     </ul>
 
     <h3>Judging Criteria</h3>
@@ -438,22 +437,26 @@ const eventDetails = {
   junkyard: `
     <h2>Junk Yard – Battle of Bands</h2>
     <p><strong>Team:</strong> 4–8 members</p>
+    <p><strong>Team:</strong> Slight modern, old and folk music</p>
 
     <h3>Rules</h3>
     <ul>
       <li>Bands must perform using junkyard-style instruments (waste, metal scraps, cans, buckets, pipes, etc.).</li>
-      <li>Performance must be original, creative, and rhythmic.</li>
+      <li>Performance must be original and creative</li>
       <li>No vulgar words, abusive language, or offensive gestures.</li>
       <li>Only safe materials allowed; no sharp edges, fire, chemicals, or dangerous items.</li>
       <li>Bands must set up and clear instruments within the given time.</li>
       <li>Must not damage stage or property.</li>
-      <li>Time limit: 5–7 minutes.</li>
+      <li>Carry your own Instrument</li>
+      <li>Use of 1 real and 3 vocal instruments is allowed</li>
+      <li>Time limit: 10-15 minutes(with set up).</li>
     </ul>
 
     <h3>Judging Criteria</h3>
     <ul>
       <li>Creativity</li>
-      <li>Rhythm &amp; coordination</li>
+      <li>Coordination</li>
+      <li>Stage Presence</li>
       <li>Energy</li>
       <li>Use of junk materials</li>
     </ul>
@@ -484,27 +487,31 @@ const eventDetails = {
     <h3>Rules</h3>
     <ul>
       <li>One team per clan, 10–12 participants including 1 narrator.</li>
-      <li>Total duration: 12 minutes (setup + performance).</li>
+      <li>Total duration: 20 minutes (setup + performance).</li>
       <li>Teams must report 20 minutes before their slot.</li>
-      <li>Exceeding 12 minutes leads to point deduction.</li>
-      <li>All audio/visual media must be submitted by 25 May 2025.</li>
+      <li>Exceeding 20 minutes leads to point deduction.</li>
+      <li>All audio/visual media must be submitted by 24 Jan 2026.</li>
       <li>No dangerous or harmful items on/off stage.</li>
       <li>No vulgar acts, abusive speech, or inappropriate dressing.</li>
       <li>Do not damage the ramp or leave props behind.</li>
+      <li>Extra points if eco-friendly material used</li>
+      <li>Best out of waste model usage is compulsory</li>
+      <li>Fire and Water are strictly not allowed</li>
     </ul>
   `,
 
   // OFF-STAGE EVENTS
   entry: `
     <h2>Entry Parade</h2>
-    <p><strong>Theme:</strong> Clan revives and showcases the culture, attire, and legacy of an ancient civilisation.</p>
+    <p><strong>Theme:</strong> Goan folk style, attire should match the event theme.</p>
 
     <h3>Rules &amp; Guidelines</h3>
     <ul>
       <li>One team per clan; minimum 10 participants.</li>
-      <li>Total time limit: 8 minutes (setup + performance).</li>
+      <li>Total time limit: 15 minutes.</li>
+      <li>Flag painting: Flag should be used.</li>
+      <li> Real tools can be used and real music is allowed.</li>
       <li>Instrumental, live music, or soundtrack allowed.</li>
-      <li>All background music/audio must be submitted before 25 May 2025.</li>
       <li>No vulgarity, abusive language, or inappropriate dressing.</li>
       <li>Late reporting beyond the slot results in penalty points.</li>
       <li>Exceeding time limit results in point deduction.</li>
@@ -612,9 +619,27 @@ const eventDetails = {
     </ul>
   `,
 
+  stones: `
+    <h2>Seven Stones</h2>
+    <p><strong>Participants:</strong> 2 per college</p>
+
+    <h3>Rules</h3>
+    <ul>
+      <li>Attacking team gets 3 chances to hit stones with the ball.</li>
+      <li>After stones fall, attackers must rebuild the stack.</li>
+      <li>Defenders try to hit attackers below shoulder.</li>
+      <li>Player hit = Out</li>
+      <li>No head shots allowed.</li>
+      <li>If stones rebuilt and team shouts “Lagori” → Win.</li>
+      <li>If all attackers are out → Defence wins</li>
+      <li>Underarm throw only</li>
+      <li>Refree's decision is final</li>
+    </ul>
+  `,
+
   surprise: `
     <h2>Surprise Event</h2>
-    <p><strong>Participants:</strong> 2 per college</p>
+    <p><strong>Participants:</strong> 1 per college</p>
 
     <h3>Rules</h3>
     <ul>
