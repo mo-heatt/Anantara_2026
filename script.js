@@ -109,7 +109,7 @@ const eventDetails = {
   frames: `
     <h2>Frames of Forgotten Valley</h2>
     <p><strong>Type:</strong> Reel Making (Pre-Event)</p>
-    <p><strong>Event Heads:</strong> Sanyog Redkar – 9527618749, Keziah Braganza – 8767792309</p>
+    <p><strong>Event Heads:</strong> Sanyog Redkar – 9527618749, Keciah Braganza – 8767792309</p>
     <p><strong>Duration:</strong> Maximum 1 minute 30 seconds</p>
     <h3>Rules</h3>
     <ul>
