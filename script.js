@@ -96,7 +96,7 @@ sigils.forEach((sigil, index) => {
 // Opens the Google Form in a new tab when "REGISTER NOW" is clicked
 function openRegistrationForm() {
   window.open(
-    "https://docs.google.com/forms/d/e/1FAIpQLScns_18--9xlS90lEzWZcbkPD_xjC1b5wJxZTyB65sGBYLbuw/viewform?usp=dialog",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfyOpT0WLsE26QcBxTDVx65e6snRp4JfgVVpmCOFbDDmxL_Wg/viewform?usp=header",
     "_blank"
   );
 }
