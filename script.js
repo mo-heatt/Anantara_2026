@@ -558,6 +558,7 @@ const eventDetails = {
     <h2>Third Degree</h2>
     <p><strong>Type:</strong> Endurance &amp; task-based event</p>
     <p><strong>Event Heads:</strong> Surya Kerkar – 8329491850, Anush Naik – 8668598945</p>
+    <p>Day 1: OFF STAGE, Day 2: ON STAGE</p>
     <h3>Rules</h3>
     <ul>
       <li>Competition consists of tasks that participants must survive.</li>
