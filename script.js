@@ -295,7 +295,7 @@ const eventDetails = {
   `,
 
   mrmiss: `
-    <h2>Mr &amp; Miss Indus</h2>
+    <h2>Mr &amp; Miss Anantara</h2>
     <p><strong>Team:</strong> 1 Male + 1 Female participant</p>
     <p><strong>Event Heads:</strong> Anca Barreto – 7972046649, Sanjeel Naik Dessai – 9511669107</p>
     <h3>Format</h3>
@@ -390,7 +390,7 @@ const eventDetails = {
   `,
 
   agt: `
-    <h2>Anantara Got Talent</h2>
+    <h2>Anantara Got Latent</h2>
     <p><strong>Type:</strong> Open Talent Showcase</p>
     <p><strong>Event Heads:</strong> Elton Luis – 9067160245, Aniket Karanjikar – 9766958469</p>
     <h3>Rules</h3>
@@ -415,8 +415,8 @@ const eventDetails = {
   box: `
     <h2>Box Theatre</h2>
     <p><strong>Theme:</strong> Progress or Price</p>
-    <p><strong>Team:</strong> How development helps us but also destroys the nature and heritage.</p>
-    <p><strong>Team:</strong> How Indus culture faded with time.</p>
+    <p><strong>Topic 1:</strong> How development helps us but also destroys the nature and heritage.</p>
+    <p><strong>Topic 2:</strong> How Indus culture faded with time.</p>
     <p><strong>Event Heads:</strong> Darshan Mangeshkar – 8007011617, Anushree Shirodkar – 9823694781</p>
     <h3>Rules</h3>
     <ul>
@@ -442,7 +442,7 @@ const eventDetails = {
   junkyard: `
     <h2>Junk Yard – Battle of Bands</h2>
     <p><strong>Team:</strong> 4–8 members</p>
-    <p><strong>Team:</strong> Slight modern, old and folk music</p>
+    <p><strong>Theme:</strong> Slight modern, old and folk music</p>
     <p><strong>Event Heads:</strong> Shreyash Naik – 7447404951, Swayam Bhingi – 7499908616</p>
     <h3>Rules</h3>
     <ul>
@@ -453,7 +453,8 @@ const eventDetails = {
       <li>Bands must set up and clear instruments within the given time.</li>
       <li>Must not damage stage or property.</li>
       <li>Carry your own Instrument</li>
-      <li>Use of 1 real and 3 vocal instruments is allowed</li>
+      <li>Each team is allowed to use only one real musical instrument (ex. guitar, flute, keyboard, etc).</li>
+      <li>Each team may include a maximum of three singers/vocal artists.</li>
       <li>Time limit: 10-15 minutes(with set up).</li>
     </ul>
     <h3>Judging Criteria</h3>
@@ -480,6 +481,14 @@ const eventDetails = {
       <li>Audio tracks must be submitted by 20th January 2026.</li>
       <li>No fire, water, or risky elements allowed.</li>
       <li>No vulgarity in moves, costumes, or music.</li>
+    </ul>
+    <h3>Judging Criteria</h3>
+    <ul>
+      <li>Choreography</li>
+      <li>Expression and Energy</li>
+      <li>Coordination</li>
+      <li>Costume and Presentation</li>
+      <li>Overall Performance</li>
     </ul>
   `,
 
