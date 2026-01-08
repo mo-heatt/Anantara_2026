@@ -130,11 +130,12 @@ const eventDetails = {
   `,
 
   banners: `
-    <h2>Banners of Harappan</h2>
+    <h2>Banners of Indus</h2>
     <p><strong>Theme:</strong>Artistic skills of Indus type</p>
     <p><strong>Event Heads:</strong> Mitali Chari – 9730204899, Aastha Rawal – 9146559377</p>
     <h3>Rules</h3>
     <ul>
+      <li>Acrylic colors should be used</li>
       <li>Team composition: Individual or team of two (only one entry per team).</li>
       <li>Model must be prepared at home and brought ready on event day.</li>
       <li>Flag must be prepared prior to the event.</li>
@@ -190,10 +191,11 @@ const eventDetails = {
     <h3>Rules & Guidelines</h3>
     <ul>
       <li>Model must be prepared at home and brought ready on day one.</li>
-      <li>Same model will be used in the fashion show</li>
+      <li>Same model should be used in the fashion show</li>
       <li>Model can be collected on day two of fashion show (by 12:00 PM)</li>
       <li>Theme: creation must relate to the Rise of Indus (craftsmanship, lifestyle, motifs, ancient utilities, sustainability, etc.).</li>
       <li>Materials allowed: only waste materials (discarded, broken, old, or used items). No new materials allowed.</li>
+      <li>No thermacol and hitloan should be used</li>
       <li>Product must be made entirely from waste; no assembling or altering at the venue.</li>
       <li>Theme connection must be clearly visible.</li>
       <li>Each team gets 2 minutes to explain concept, theme relevance, materials used, and purpose.</li>
@@ -239,22 +241,25 @@ const eventDetails = {
     <h3>Team & Format</h3>
     <ul>
       <li>1–3 participants per team.</li>
-      <li>Pitch: 20 minutes.</li>
+      <li>Pitch: 10 minutes.</li>
       <li>Q&A by Sharks: 5 minutes.</li>
       <li>Only one entry per college/team.</li>
+      <li>PPT submission mandatory 2 days prior</li>
+      <li>Surprise pre round</li>
+      <li>Formal Attire required</li>
     </ul>
     <h3>Pitch Requirements</h3>
     <ul>
       <li>Clearly present idea / product / business model.</li>
       <li>Must include: Problem → Solution → USP → Costing → Revenue → Impact.</li>
       <li>PPT / model / prototype is optional.</li>
-      <li>Content must be original (no plagiarism).</li>
+      <li>Content must be original and based on practical ideas only.</li>
     </ul>
     <h3>Conduct</h3>
     <ul>
       <li>No vulgarity or inappropriate content.</li>
       <li>Maintain professionalism and respect.</li>
-      <li>Report 10 minutes before the event.</li>
+      <li>Report 15 minutes before the event.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
@@ -263,7 +268,7 @@ const eventDetails = {
       <li>Clarity of presentation</li>
       <li>Financial understanding</li>
       <li>Market potential</li>
-      <li>Q&A performance</li>
+      <li>Overall performance</li>
     </ul>
   `,
 
@@ -287,10 +292,11 @@ const eventDetails = {
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
-      <li>Absurdity level (creative logic)</li>
+      <li>Content and Relevance</li>
       <li>Clarity & oratory</li>
-      <li>Persuasiveness</li>
-      <li>Team coordination</li>
+      <li>Coordination and Timing</li>
+      <li>Structure of Argument</li>
+      <li>Rebuttal and Responsiveness</li>
     </ul>
   `,
 
@@ -307,6 +313,7 @@ const eventDetails = {
     </ul>
     <h3>Rules</h3>
     <ul>
+      <li>Only 3 Minutes for the performance on Stage</li>
       <li>Audio for on-stage performances must be submitted prior.</li>
       <li>Vulgarity in costume or performance leads to immediate disqualification.</li>
       <li>Only one final winner will be crowned.</li>
@@ -343,8 +350,8 @@ const eventDetails = {
 
   mascot: `
     <h2>Mascot – Indo Futuristic</h2>
-    <p><strong>Team:</strong> 4 participants (1 Mascot + 3 Helpers)</p>
-    <p><strong>Duration:</strong> 3 hours</p>
+    <p><strong>Team:</strong> 4 participants (1 Mascot + 1 Helper)</p>
+    <p><strong>Duration:</strong> Half Day</p>
     <p><strong>Event Heads:</strong> Darshan Mangeshkar – 8007011617, Tushar Pednekar – 9420959022</p>
     <h3>Rules</h3>
     <ul>
@@ -354,7 +361,6 @@ const eventDetails = {
       <li>No materials will be provided; teams must bring everything required.</li>
       <li>Mascot must remain in the crafted attire for the full time.</li>
       <li>Must not disturb other events.</li>
-      <li>Mascots are only permitted to be on the open ground and no where else</li>
       <li>No vulgar language, gestures, or obscene acts.</li>
       <li>On-stage round: each warrior showcases ability (dance, act, expression, pose, etc.).</li>
     </ul>
@@ -371,13 +377,15 @@ const eventDetails = {
     <h2>Solo Singing</h2>
     <p><strong>Type:</strong> Solo Performance</p>
     <p><strong>Event Heads:</strong> Pratham Sawant – 7559242643, Sansh Shirodkar – 9834102180</p>
-    <p>Old 90's songs with tune of modern songs</p>
+    <p>Theme: 1980's to 1999</p>
     <h3>Rules</h3>
     <ul>
       <li>Time limit is 3 to 5 minutes</li>
       <li>No vulgar or offensive lyrics</li>
-      <li>Lyrics must be original.</li>
+      <li>Can refer to Lyrics</li>
       <li>Language must be Hindi, English or Konkani only</li>
+      <li>Participants can sing using a Karaoke or insturmental track</li>
+      <li>Lipsyncing and pre recorded vocals are not allowed</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
@@ -417,7 +425,7 @@ const eventDetails = {
     <p><strong>Theme:</strong> Progress or Price</p>
     <p><strong>Topic 1:</strong> How development helps us but also destroys the nature and heritage.</p>
     <p><strong>Topic 2:</strong> How Indus culture faded with time.</p>
-    <p><strong>Event Heads:</strong> Darshan Mangeshkar – 8007011617, Anushree Shirodkar – 9823694781</p>
+    <p><strong>Event Heads:</strong> Trushank Prabhudessai – 9096587109, Anushree Shirodkar – 9834169441</p>
     <h3>Rules</h3>
     <ul>
       <li>6-9 members strictly</li>
@@ -443,7 +451,7 @@ const eventDetails = {
     <h2>Junk Yard – Battle of Bands</h2>
     <p><strong>Team:</strong> 4–8 members</p>
     <p><strong>Theme:</strong> Slight modern, old and folk music</p>
-    <p><strong>Event Heads:</strong> Shreyash Naik – 7447404951, Swayam Bhingi – 7499908616</p>
+    <p><strong>Event Heads:</strong> Shreyesh Naik – 7447404951, Samarth Raikar – 9322112574</p>
     <h3>Rules</h3>
     <ul>
       <li>Bands must perform using junkyard-style instruments (waste, metal scraps, cans, buckets, pipes, etc.).</li>
@@ -470,11 +478,13 @@ const eventDetails = {
   indusbeat: `
     <h2>Indus Beat</h2>
     <p><strong>Type:</strong> Group Dance</p>
-    <p><strong>Theme:</strong> Open theme showcasing pillars of Indus civilisation</p>
+    <p><strong>Theme:</strong> The world of Tomorrow</p>
+    <p><strong>Description:</strong> This group dance explores life and movement in a futuristic world shaped by AI and advanced Technology.
     <p><strong>Event Heads:</strong> Snehin Lotlikar – 8669144066, Prachi Naik – 8275334221</p>
     <h3>Rules</h3>
     <ul>
       <li>One team per college, 6–12 participants.</li>
+      <li>Dance performance should not include any kind of act in it.</li>
       <li>Total time: 8 minutes (2 minutes setup + 6 minutes performance).</li>
       <li>No warning bell; crossing 6 minutes leads to point deduction.</li>
       <li>Late arrival beyond slot leads to penalty points.</li>
@@ -496,7 +506,7 @@ const eventDetails = {
     <h2>Ancient Runway</h2>
     <p><strong>Theme:</strong> Rise, Revival &amp; Royalty of the Indus Era</p>
     <p><strong>Type:</strong> Fashion Show</p>
-    <p><strong>Event Heads:</strong> Nirbhay Dessai – 8766743383, Simi Pagi – 9356387762</p>
+    <p><strong>Event Heads:</strong> Nirbhay Desai – 8766743383, Simi Pagi – 9356387762</p>
     <h3>Rules</h3>
     <ul>
       <li>One team per clan, 10–12 participants including 1 narrator.</li>
@@ -517,7 +527,7 @@ const eventDetails = {
   entry: `
     <h2>Entry Parade</h2>
     <p><strong>Theme:</strong> Goan folk style, attire should match the event theme.</p>
-    <p><strong>Event Heads:</strong> Samarth Raikar – 9322112574, Daksh Naik – 8010734856</p>
+    <p><strong>Event Heads:</strong> Swayam Bhingi – 7499908616, Daksh Naik – 8010734856</p>
     <h3>Rules &amp; Guidelines</h3>
     <ul>
       <li>One team per clan; minimum 10 participants.</li>
@@ -541,7 +551,8 @@ const eventDetails = {
 
   tug: `
     <h2>Tug of War</h2>
-    <p><strong>Team:</strong> 7 players per clan (at least 2 female players)</p>
+    <p><strong>Team:</strong> 8 players per clan (at least 2 female players compulsory)</p>
+    <p><strong>Team:</strong>Maximum Team weight 600 kg.</p>
     <p><strong>Event Heads:</strong> Rohan Gaonkar – 7499959716, Bhuvan Purohit – 8668598945</p>
     <h3>Rules</h3>
     <ul>
@@ -561,6 +572,7 @@ const eventDetails = {
     <p>Day 1: OFF STAGE, Day 2: ON STAGE</p>
     <h3>Rules</h3>
     <ul>
+      <li>Only Men compulsory</li>
       <li>Competition consists of tasks that participants must survive.</li>
       <li>Elimination based on performance.</li>
       <li>Selected participants go through a final interview round.</li>
@@ -574,23 +586,23 @@ const eventDetails = {
 
   cricket: `
     <h2>Control Cricket</h2>
-    <p><strong>Team:</strong> 7 players per clan (with 2 female players per team)</p>
+    <p><strong>Team:</strong> 9 players per clan (with 3 female players compulsory)</p>
     <p><strong>Event Heads:</strong> Eshwari Borkar – 8446659426, Shridhar Keni – 8329955835</p>
     <h3>Rules</h3>
     <ul>
-      <li>4 overs per innings.</li>
-      <li>One over must be bowled by a female player to the opponent's female player.</li>
-      <li>Underarm bowling only; throw bowling strictly prohibited.</li>
-      <li>In case of a tie, a super over will be played.</li>
-      <li>Umpire's decision is final.</li>
-      <li>Matches played in knockout format.</li>
-      <li>Pitch-specific rules will be explained at the venue.</li>
+      <li><strong>Overarm bowling</strong> is allowed; however, <strong>only female players are permitted to throw the ball</strong>.</li>
+      <li>All matches will be played with <strong>4 overs per innings</strong>.</li>
+      <li><strong>One over must be compulsorily bowled by a female player</strong>, and that over must be <strong>batting by female players only</strong>.</li>
+      <li><strong>The umpire’s decision is final</strong>. Any violation may lead to <strong>disqualification of the team</strong>.</li>
+      <li>Teams must carry their <strong>college ID cards</strong> and <strong>bats</strong>. These will <strong>not be provided by the organizers</strong>.</li>
+      <li><strong>Sports attire is compulsory</strong> for all players.</li>
     </ul>
+
   `,
 
   stones: `
     <h2>Seven Stones</h2>
-    <p><strong>Participants:</strong> 7 players in each team</p>
+    <p><strong>Participants:</strong> 7 players in each team (2 girls compulsory)</p>
     <p><strong>Event Heads:</strong> Sanat Naik – 9960846919, Abhijeet Dhere – 9284994966</p>
     <h3>Rules</h3>
     <ul>
@@ -610,7 +622,7 @@ const eventDetails = {
 
   strong: `
     <h2>Strong Man &amp; Strong Woman</h2>
-    <p><strong>Participants:</strong> 2 per college</p>
+    <p><strong>Participants:</strong> 2 per college (1 male and 1 female compulsory)</p>
     <p><strong>Event Heads:</strong> Arif Nawar – 8983019609, Kushi Nambiar – 7066246855</p>
     <h3>Rules</h3>
     <ul>
@@ -628,27 +640,25 @@ const eventDetails = {
     <p><strong>Format:</strong> 4-round outdoor hunt</p>
     <p><strong>Event Heads:</strong> Divy Suthar – 8999176317, Arhaan Shaikh – 9028453020</p>
     <h3>Rules</h3>
-    <ul>
-      <li>Clues must be found in the given order; skipping a clue leads to disqualification.</li>
-      <li>Team members must not use cell phones to communicate unless separated.</li>
-      <li>Do not move, tamper with, destroy, or alter answers/clues at locations.</li>
-      <li>Answers must be legible and exact.</li>
-      <li>All team members must be present when turning in answer sheets.</li>
-      <li>Each team will be accompanied by a volunteer.</li>
-      <li>One team member must have and carry a valid driving licence.</li>
-      <li>Teams must bring their own bike; none will be provided.</li>
-      <li>Helmets are compulsory for rider and pillion.</li>
-      <li>Participants and teacher in-charge must sign an undertaking.</li>
-    </ul>
-    <h3>Disqualification Scenarios</h3>
-    <ul>
-      <li>Reckless or rash driving.</li>
-      <li>Damaging any property.</li>
-      <li>Interfering with other teams.</li>
-      <li>Copying or stealing from other teams.</li>
-      <li>Not completing within the time limit.</li>
-      <li>Police involvement for any reason.</li>
-    </ul>
+<ul>
+  <li>Any changes to the rules and regulations will be <strong>communicated accordingly</strong>.</li>
+  <li>Each team will be <strong>accompanied by a volunteer</strong> for supervision.</li>
+  <li><strong>Participants and the teacher in-charge must sign an undertaking form</strong>.</li>
+  <li>The <strong>event coordinator’s decision will be final and binding</strong> to all.</li>
+  <li>Participants are <strong>strictly forbidden</strong> to move, tamper with, destroy, or otherwise alter the answers at the clue locations.</li>
+  <li>If participants <strong>skip any clue</strong>, they may have to perform a task pre-decided by a volunteer or face <strong>disqualification</strong>.</li>
+  <li>The <strong>last round will be conducted outside the Ravindra Bhavan campus</strong>.</li>
+</ul>
+
+<h3>Disqualification Scenarios</h3>
+<ul>
+  <li>Damaging any property.</li>
+  <li>Interfering with other teams.</li>
+  <li>Copying or stealing from other teams.</li>
+  <li>Not completing the event within the time limit.</li>
+  <li>Police involvement for any reason.</li>
+  <li>Getting involved in road rage.</li>
+</ul>
   `,
 
   surprise: `
