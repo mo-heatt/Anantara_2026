@@ -252,7 +252,8 @@ const eventDetails = {
     <ul>
       <li>Clearly present idea / product / business model.</li>
       <li>Must include: Problem → Solution → USP → Costing → Revenue → Impact.</li>
-      <li>PPT / model / prototype is optional.</li>
+      <li>PPT compulsory</li>
+      <li>Model/Prototype optional</li>
       <li>Content must be original and based on practical ideas only.</li>
     </ul>
     <h3>Conduct</h3>
@@ -266,8 +267,7 @@ const eventDetails = {
       <li>Innovation & originality</li>
       <li>Feasibility & practicality</li>
       <li>Clarity of presentation</li>
-      <li>Financial understanding</li>
-      <li>Market potential</li>
+      <li>Financial understanding and Market potential</li>
       <li>Overall performance</li>
     </ul>
   `,
@@ -377,7 +377,7 @@ const eventDetails = {
     <h2>Solo Singing</h2>
     <p><strong>Type:</strong> Solo Performance</p>
     <p><strong>Event Heads:</strong> Pratham Sawant – 7559242643, Sansh Shirodkar – 9834102180</p>
-    <p>Theme: 1980's to 1999</p>
+    <p>Theme: Classic soul meets modern bass. Select your favorite song from the 1980s to  1999.Keep the lyrics the same, but make the performance faster and more upbeat than the original.</p>
     <h3>Rules</h3>
     <ul>
       <li>Time limit is 3 to 5 minutes</li>
@@ -425,12 +425,12 @@ const eventDetails = {
     <p><strong>Theme:</strong> Progress or Price</p>
     <p><strong>Topic 1:</strong> How development helps us but also destroys the nature and heritage.</p>
     <p><strong>Topic 2:</strong> How Indus culture faded with time.</p>
-    <p><strong>Event Heads:</strong> Trushank Prabhudessai – 9096587109, Anushree Shirodkar – 9834169441</p>
+    <p><strong>Event Heads:</strong> Trushank Prabhudesai – 9096587109, Anushree Shirodkar – 9834169441</p>
     <h3>Rules</h3>
     <ul>
       <li>6-9 members strictly</li>
       <li>Violation of rules by any team will lead to direct disqualification</li>
-      <li>Action happens inside or around the provided box.</li>
+      <li>Performance inside the box will only be considerd</li>
       <li>Act must be original, respectful, and connected to the theme.</li>
       <li>No vulgar words, abusive language, or hate content.</li>
       <li>Only safe props allowed; no fire, water, sharp objects, or dangerous items.</li>
@@ -530,7 +530,7 @@ const eventDetails = {
     <p><strong>Event Heads:</strong> Swayam Bhingi – 7499908616, Daksh Naik – 8010734856</p>
     <h3>Rules &amp; Guidelines</h3>
     <ul>
-      <li>One team per clan; minimum 10 participants.</li>
+      <li>One team per clan; 25 to 30 participants in a team.</li>
       <li>Total time limit: 15 minutes.</li>
       <li>Flag painting: Flag should be used.</li>
       <li> Real tools can be used and real music is allowed.</li>
@@ -596,8 +596,8 @@ const eventDetails = {
       <li><strong>The umpire’s decision is final</strong>. Any violation may lead to <strong>disqualification of the team</strong>.</li>
       <li>Teams must carry their <strong>college ID cards</strong> and <strong>bats</strong>. These will <strong>not be provided by the organizers</strong>.</li>
       <li><strong>Sports attire is compulsory</strong> for all players.</li>
+      <li>Any changes in the rules will be explained at the venue</li>
     </ul>
-
   `,
 
   stones: `
