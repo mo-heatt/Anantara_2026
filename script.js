@@ -398,7 +398,7 @@ const eventDetails = {
   `,
 
   agt: `
-    <h2>Anantara Got Latent</h2>
+    <h2>Anantara's Got Latent</h2>
     <p><strong>Type:</strong> Open Talent Showcase</p>
     <p><strong>Event Heads:</strong> Elton Luis – 9067160245, Aniket Karanjikar – 9766958469</p>
     <h3>Rules</h3>
