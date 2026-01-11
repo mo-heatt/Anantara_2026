@@ -119,7 +119,7 @@ const eventDetails = {
       <li>Video length must not exceed 1 minute 30 seconds.</li>
       <li>Use of inappropriate language leads to direct disqualification.</li>
       <li>Fake likes or any attempt to manipulate engagement will result in disqualification.</li>
-      <li>Videos must be submitted via email to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> by 24th January 2026, 5:00 PM.</li>
+      <li>Videos must be uploaded and send collab request to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> by 26th January 2026, 5:00 PM.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
