@@ -939,14 +939,20 @@ h2 {
 }
 
 /* ===================== SECTION BACKGROUND OVERLAYS ===================== */
-.core-team-marquee {
+.marquee-track {
+  display: flex;
   width: max-content;
-  white-space: nowrap;
-  animation: coreTeamScroll 22s linear infinite;
+  animation: marqueeScroll 22s linear infinite;
 }
 
+.marquee-content {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap;
+  font-size: 1.125rem;
+}
 
-@keyframes coreTeamScroll {
+@keyframes marqueeScroll {
   from {
     transform: translateX(0);
   }
@@ -955,9 +961,6 @@ h2 {
   }
 }
 
-
-/* Optional: pause on hover */
-.core-team-marquee:hover {
+.marquee-track:hover {
   animation-play-state: paused;
 }
-
