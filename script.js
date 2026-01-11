@@ -379,7 +379,7 @@ banners: `
     <h2>Solo Singing</h2>
     <p><strong>Type:</strong> Solo Performance</p>
     <p><strong>Event Heads:</strong> Pratham Sawant – 7559242643, Sansh Shirodkar – 9834102180</p>
-    <p>Theme: Classic soul meets modern bass. Select your favorite song from the 1980s to  1999.Keep the lyrics the same, but make the performance faster, modern and more upbeat than the original.</p>
+    <p>Theme: Classic soul meets modern bass. Select your favorite song from the 1980s to  1999.Keep the lyrics the same, but make the performance modern and more upbeat than the original.</p>
     <h3>Rules</h3>
     <ul>
       <li>Time limit is 3 to 5 minutes</li>
