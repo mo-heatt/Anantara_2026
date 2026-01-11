@@ -673,7 +673,7 @@ agt: `
   surprise: `
     <h2>Surprise Event</h2>
     <p><strong>Participants:</strong> 1 per college</p>
-    <p><strong>Event Heads:</strong> Sarthak Satardekar – 8766748559, Tribhuvan Purohit – 9881668933</p>
+    <p><strong>Event Heads:</strong> Sarthak Satardekar – 8799880986, Tribhuvan Purohit – 9881668933</p>
     <h3>Rules</h3>
     <ul>
       <li>Participants should be prepared for any given task.</li>
