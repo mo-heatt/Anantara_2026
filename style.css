@@ -950,6 +950,7 @@ h2 {
   gap: 4rem;
   white-space: nowrap;
   font-size: 1.125rem;
+  padding-right: 6rem;
 }
 
 @keyframes marqueeScroll {
