@@ -119,11 +119,12 @@ const eventDetails = {
       <li>Video length must not exceed 1 minute 30 seconds.</li>
       <li>Use of inappropriate language leads to direct disqualification.</li>
       <li>Fake likes or any attempt to manipulate engagement will result in disqualification.</li>
-      <li>Videos must be uploaded and send collab request to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> by 26th January 2026, 5:00 PM.</li>
+      <li>Video must be uploaded and send collab request to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> by 26th January 2026, 5:00 PM.</li>
+      <li>Language should be in Konkani, Marathi, Hindi or English.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
-      <li>Number of likes</li>
+      <li>Number of likes and Views(30%)</li>
       <li>Creativity</li>
       <li>Concept</li>
       <li>Overall presentation</li>
@@ -176,7 +177,7 @@ banners: `
       <li>Video should reflect positive spirit and creativity; humour must remain clean and respectful.</li>
       <li>No inappropriate language, vulgarity, or offensive gestures.</li>
       <li>Content must be original; plagiarised or copied content is not accepted.</li>
-      <li>Submit video via email to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> on or before 20th January 2026, 5:00 PM.</li>
+      <li>Submit video via email to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> on or before 27th January 2026, 5:00 PM.</li>
       <li>File name format: TeamName_IceBreaker_Anantara2026.</li>
       <li>Language should be in Konkani, Marathi, Hindi or English.</li>
     </ul>
