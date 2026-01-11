@@ -940,9 +940,11 @@ h2 {
 
 /* ===================== SECTION BACKGROUND OVERLAYS ===================== */
 .core-team-marquee {
+  width: max-content;
   white-space: nowrap;
-  animation: coreTeamScroll 20s linear infinite;
+  animation: coreTeamScroll 22s linear infinite;
 }
+
 
 @keyframes coreTeamScroll {
   from {
@@ -952,6 +954,7 @@ h2 {
     transform: translateX(-50%);
   }
 }
+
 
 /* Optional: pause on hover */
 .core-team-marquee:hover {
