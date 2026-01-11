@@ -941,7 +941,7 @@ h2 {
 /* ===================== SECTION BACKGROUND OVERLAYS ===================== */
 .core-team-marquee {
   white-space: nowrap;
-  animation: coreTeamScroll 35s linear infinite;
+  animation: coreTeamScroll 20s linear infinite;
 }
 
 @keyframes coreTeamScroll {
