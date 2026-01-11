@@ -327,7 +327,6 @@ banners: `
       <li>Originality</li>
       <li>Presentation</li>
       <li>Confidence</li>
-      <li>Mindset</li>
     </ul>
   `,
 
@@ -497,7 +496,7 @@ agt: `
       <li>Total time: 8 minutes (2 minutes setup + 6 minutes performance).</li>
       <li>No warning bell; crossing 6 minutes leads to point deduction.</li>
       <li>Late arrival beyond slot leads to penalty points.</li>
-      <li>Audio tracks must be submitted by 20th January 2026.</li>
+      <li>Audio tracks must be submitted on the Registration Counter.</li>
       <li>No fire, water, or risky elements allowed.</li>
       <li>No vulgarity in moves, costumes, or music.</li>
     </ul>
