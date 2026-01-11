@@ -938,3 +938,23 @@ h2 {
   }
 }
 
+/* ===================== SECTION BACKGROUND OVERLAYS ===================== */
+.core-team-marquee {
+  white-space: nowrap;
+  animation: coreTeamScroll 35s linear infinite;
+}
+
+@keyframes coreTeamScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: pause on hover */
+.core-team-marquee:hover {
+  animation-play-state: paused;
+}
+
