@@ -132,7 +132,7 @@ const eventDetails = {
 
 banners: `
   <h2>Banners of Indus</h2>
-  <p><strong>Theme:</strong> Artistic skills of Indus type</p>
+  <p><strong>Theme:</strong> Roots of the Indus: Identity, Clans and Civilization Pride.</p>
   <p><strong>Event Heads:</strong> Mitali Chari – 9730204899, Aastha Rawal – 9146559377</p>
 
   <h3>Rules</h3>
@@ -202,7 +202,6 @@ banners: `
       <li>Materials allowed: only waste materials (discarded, broken, old, or used items). No new materials allowed.</li>
       <li>No thermacol and hitloan should be used</li>
       <li>Product must be made entirely from waste; no assembling or altering at the venue.</li>
-      <li>Theme connection must be clearly visible.</li>
       <li>Each team gets 2 minutes to explain concept, theme relevance, materials used, and purpose.</li>
       <li>Use of new/unsafe materials, off-theme models, ready-made items, or inappropriate behaviour will lead to disqualification.</li>
     </ul>
@@ -210,8 +209,6 @@ banners: `
     <ul>
       <li>Creativity & innovation</li>
       <li>Theme relevance</li>
-      <li>Utility</li>
-      <li>Aesthetics</li>
       <li>Overall execution</li>
     </ul>
   `,
