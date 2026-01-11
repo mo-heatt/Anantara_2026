@@ -114,6 +114,7 @@ const eventDetails = {
     <h3>Rules</h3>
     <ul>
       <li>Create a video promoting Anantara in a humorous or funny manner.</li>
+      <li>Collab with a Influencer above 10k followers and with one college student.</li>
       <li>Do not mention your college name in the video.</li>
       <li>Video length must not exceed 1 minute 30 seconds.</li>
       <li>Use of inappropriate language leads to direct disqualification.</li>
@@ -129,34 +130,39 @@ const eventDetails = {
     </ul>
   `,
 
-  banners: `
-    <h2>Banners of Indus</h2>
-    <p><strong>Theme:</strong>Artistic skills of Indus type</p>
-    <p><strong>Event Heads:</strong> Mitali Chari – 9730204899, Aastha Rawal – 9146559377</p>
-    <h3>Rules</h3>
-    <ul>
-      <li>Acrylic colors should be used</li>
-      <li>Team composition: Individual or team of two (only one entry per team).</li>
-      <li>Model must be prepared at home and brought ready on event day.</li>
-      <li>Flag must be prepared prior to the event.</li>
-      <li>Clarity of the theme is most important.</li>
-      <li>Flag should align with the theme as well as the allotted team name.</li>
-      <li>Legacy call of the team must be written on the flag.</li>
-      <li>Flag should be painted on cloth material.</li>
-      <li>Dimensions: 100 cm (Width) × 75 cm (Height).</li>
-      <li>The same flag will be used for entry parade and must be submitted later</li>
-      <li>The given name provided by the host must be written on the flag</li>
-    </ul>
-    <h3>Judging Criteria</h3>
-    <ul>
-      <li>Uniqueness</li>
-      <li>Imagination</li>
-      <li>Creativity</li>
-      <li>Quality: composition, design elements, and colour</li>
-      <li>Overall artistic impression</li>
-      <li>Relevance to the theme</li>
-    </ul>
-  `,
+banners: `
+  <h2>Banners of Indus</h2>
+  <p><strong>Theme:</strong> Artistic skills of Indus type</p>
+  <p><strong>Event Heads:</strong> Mitali Chari – 9730204899, Aastha Rawal – 9146559377</p>
+
+  <h3>Rules</h3>
+  <ul>
+    <li>The flag shall be designed in a manner that aligns with and complements the overall theme of the event.</li>
+    <li>Team names will be provided in advance, and relevant elements or symbols representing the team names must be incorporated into the flag design.</li>
+    <li>Flag should align with the theme as well as the allotted team name.</li>
+    <li>Legacy call of the team must be written on the flag.</li>
+    <li>Acrylic colors should be used.</li>
+    <li>Dimensions: 100 cm (Width) × 75 cm (Height).</li>
+    <li>Flag should be painted on cloth material.</li>
+    <li>The given name provided by the host must be written on the flag.</li>
+    <li>Team composition: Individual or team of two (only one entry per team).</li>
+    <li>Model must be prepared at home and brought ready on event day.</li>
+    <li>Flag must be prepared prior to the event.</li>
+    <li>Clarity of the theme is most important.</li>
+    <li>Teams are required to show their flags during registration.</li>
+    <li>The same flag will be used for the entry parade and must be submitted later at the registration counter.</li>
+  </ul>
+
+  <h3>Judging Criteria</h3>
+  <ul>
+    <li>Uniqueness</li>
+    <li>Imagination</li>
+    <li>Creativity</li>
+    <li>Quality: composition, design elements, and colour</li>
+    <li>Overall artistic impression</li>
+    <li>Relevance to the theme</li>
+  </ul>
+`,
 
   icebreaker: `
     <h2>Ice Breaker</h2>
@@ -164,22 +170,21 @@ const eventDetails = {
     <p><strong>Event Heads:</strong> Onkar Chari – 8767386864, Ansh Naik – 8390006572</p>
     <h3>Rules</h3>
     <ul>
-      <li>Theme: Indus civilization to modern twist - Introduce the team</li>
-      <li>Lenght of the video must be between 3 to 5 minutes</li>
+      <li>Theme: Indus civilization with modern twist - Introduce the team</li>
+      <li>Length of the video must be between 3 to 5 minutes</li>
       <li>Do not reveal the college name; only the assigned team name may be used.</li>
       <li>Video should reflect positive spirit and creativity; humour must remain clean and respectful.</li>
       <li>No inappropriate language, vulgarity, or offensive gestures.</li>
       <li>Content must be original; plagiarised or copied content is not accepted.</li>
       <li>Submit video via email to <a href="mailto:anantara.2026sdcce@gmail.com">anantara.2026sdcce@gmail.com</a> on or before 20th January 2026, 5:00 PM.</li>
       <li>File name format: TeamName_IceBreaker_Anantara2026.</li>
-      <li>Unsafe props or hazardous materials are strictly prohibited.</li>
+      <li>Language should be in Konkani, Marathi, Hindi or English.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
       <li>Energy & engagement</li>
       <li>Creativity</li>
-      <li>Team coordination</li>
-      <li>Humour & entertainment</li>
+      <li>Cinematography</li>
       <li>Overall presentation</li>
     </ul>
   `,
@@ -191,8 +196,8 @@ const eventDetails = {
     <h3>Rules & Guidelines</h3>
     <ul>
       <li>Model must be prepared at home and brought ready on day one.</li>
-      <li>Same model should be used in the fashion show</li>
-      <li>Model can be collected on day two of fashion show (by 12:00 PM)</li>
+      <li>Same prop should be used in the fashion show</li>
+      <li>The prop should be submitted during registration on counter and should be collected after judging on Day 1.</li>
       <li>Theme: creation must relate to the Rise of Indus (craftsmanship, lifestyle, motifs, ancient utilities, sustainability, etc.).</li>
       <li>Materials allowed: only waste materials (discarded, broken, old, or used items). No new materials allowed.</li>
       <li>No thermacol and hitloan should be used</li>
@@ -314,7 +319,7 @@ const eventDetails = {
     <h3>Rules</h3>
     <ul>
       <li>Only 3 Minutes for the performance on Stage</li>
-      <li>Audio for on-stage performances must be submitted prior.</li>
+      <li>Audio for on-stage performances must be submitted at the Registration Counter.</li>
       <li>Vulgarity in costume or performance leads to immediate disqualification.</li>
       <li>Only one final winner will be crowned.</li>
       <li>Only passing both the rounds will lead to the final round</li>
@@ -350,7 +355,7 @@ const eventDetails = {
 
   mascot: `
     <h2>Mascot – Indo Futuristic</h2>
-    <p><strong>Team:</strong> 4 participants (1 Mascot + 1 Helper)</p>
+    <p><strong>Team:</strong> 2 participants (1 Mascot + 1 Helper)</p>
     <p><strong>Duration:</strong> Half Day</p>
     <p><strong>Event Heads:</strong> Darshan Mangeshkar – 8007011617, Tushar Pednekar – 9420959022</p>
     <h3>Rules</h3>
@@ -377,7 +382,7 @@ const eventDetails = {
     <h2>Solo Singing</h2>
     <p><strong>Type:</strong> Solo Performance</p>
     <p><strong>Event Heads:</strong> Pratham Sawant – 7559242643, Sansh Shirodkar – 9834102180</p>
-    <p>Theme: Classic soul meets modern bass. Select your favorite song from the 1980s to  1999.Keep the lyrics the same, but make the performance faster and more upbeat than the original.</p>
+    <p>Theme: Classic soul meets modern bass. Select your favorite song from the 1980s to  1999.Keep the lyrics the same, but make the performance faster, modern and more upbeat than the original.</p>
     <h3>Rules</h3>
     <ul>
       <li>Time limit is 3 to 5 minutes</li>
@@ -397,28 +402,34 @@ const eventDetails = {
     </ul>
   `,
 
-  agt: `
-    <h2>Anantara's Got Latent</h2>
-    <p><strong>Type:</strong> Open Talent Showcase</p>
-    <p><strong>Event Heads:</strong> Elton Luis – 9067160245, Aniket Karanjikar – 9766958469</p>
-    <h3>Rules</h3>
-    <ul>
-      <li>Solo performance: 1 minute only (exceeding time may lead to disqualification).</li>
-      <li>Performance must be original.</li>
-      <li>No vulgarity, abusive language, hate speech, or personal attacks.</li>
-      <li>Allowed talents: singing, dancing, acting, magic, or any safe performance.</li>
-      <li>No unsafe props or actions (no fire, water, smoke, sharp objects, or dangerous items).</li>
-      <li>No alcohol, tobacco, or misbehaviour.</li>
-      <li>Maintain discipline and stage decorum.</li>
-    </ul>
-    <h3>Judging Criteria</h3>
-    <ul>
-      <li>Skill level</li>
-      <li>Creativity &amp; originality</li>
-      <li>Stage presence</li>
-      <li>Audience engagement</li>
-    </ul>
-  `,
+agt: `
+  <h2>Anantara's Got Latent</h2>
+  <p><strong>Type:</strong> Open Talent Showcase</p>
+  <p><strong>Event Heads:</strong> Elton Luis – 9067160245, Aniket Karanjikar – 9766958469</p>
+
+  <h3>Rules</h3>
+  <ul>
+    <li>Performance duration: Exactly 1 minute only (exceeding time may lead to disqualification).</li>
+    <li>Solo performance only.</li>
+    <li>The focus is on unique, weird, and entertaining “latent” talents; professional-level performances are not required.</li>
+    <li>Performances and interviews can be in Konkani, Hindi, or English.</li>
+    <li>Strict decorum must be maintained: zero tolerance for vulgarity, abusive language, hate speech, or personal attacks.</li>
+    <li>By performing, contestants agree to participate in a light-hearted Q&amp;A/Roast session with the judges.</li>
+    <li>Everything said on stage must be taken in a light-hearted spirit.</li>
+    <li>Only safe performances are allowed.</li>
+    <li>No unsafe props or actions (no fire, sharp objects, or dangerous items).</li>
+    <li>No alcohol, tobacco, or misbehaviour.</li>
+    <li>Maintain discipline and stage decorum at all times.</li>
+  </ul>
+
+  <h3>Judging Criteria</h3>
+  <ul>
+    <li>The “Latent” Factor: Uniqueness and weirdness of the talent.</li>
+    <li>Entertainment Value: Audience reaction, fun, and engagement.</li>
+    <li>The Interview (Wit): How well the performer handles judges’ jokes and questions.</li>
+    <li>Stage Presence: Confidence, personality, and overall vibe on stage.</li>
+  </ul>
+`,
 
   box: `
     <h2>Box Theatre</h2>
@@ -428,14 +439,14 @@ const eventDetails = {
     <p><strong>Event Heads:</strong> Trushank Prabhudesai – 9096587109, Anushree Shirodkar – 9834169441</p>
     <h3>Rules</h3>
     <ul>
-      <li>6-9 members strictly</li>
+      <li>6-9 members</li>
       <li>Violation of rules by any team will lead to direct disqualification</li>
       <li>Performance inside the box will only be considerd</li>
       <li>Act must be original, respectful, and connected to the theme.</li>
       <li>No vulgar words, abusive language, or hate content.</li>
       <li>Only safe props allowed; no fire, water, sharp objects, or dangerous items.</li>
       <li>Do not damage stage or provided props.</li>
-      <li>Time limit: 8-10 minutes.</li>
+      <li>Time limit: 8-15 minutes including setup time.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
@@ -513,7 +524,7 @@ const eventDetails = {
       <li>Total duration: 20 minutes (setup + performance).</li>
       <li>Teams must report 20 minutes before their slot.</li>
       <li>Exceeding 20 minutes leads to point deduction.</li>
-      <li>All audio/visual media must be submitted by 24 Jan 2026.</li>
+      <li>All audio/visual media must be submitted on Registration Counter.</li>
       <li>No dangerous or harmful items on/off stage.</li>
       <li>No vulgar acts, abusive speech, or inappropriate dressing.</li>
       <li>Do not damage the ramp or leave props behind.</li>
@@ -530,8 +541,8 @@ const eventDetails = {
     <p><strong>Event Heads:</strong> Swayam Bhingi – 7499908616, Daksh Naik – 8010734856</p>
     <h3>Rules &amp; Guidelines</h3>
     <ul>
-      <li>One team per clan; 25 to 30 participants in a team.</li>
-      <li>Total time limit: 15 minutes.</li>
+      <li>One team per clan; 25 to 35 participants in a team.</li>
+      <li>Time limit: 8-15 minutes infront of judges.</li>
       <li>Flag painting: Flag should be used.</li>
       <li> Real tools can be used and real music is allowed.</li>
       <li>Instrumental, live music, or soundtrack allowed.</li>
@@ -539,6 +550,7 @@ const eventDetails = {
       <li>Late reporting beyond the slot results in penalty points.</li>
       <li>Exceeding time limit results in point deduction.</li>
       <li>No dangerous, sharp, harmful, or flammable items.</li>
+      <li>The team must include a slogan which reflects and presents the team name.</li>
     </ul>
     <h3>Judging Criteria</h3>
     <ul>
@@ -592,7 +604,7 @@ const eventDetails = {
     <ul>
       <li><strong>Overarm bowling</strong> is allowed; however, <strong>only female players are permitted to throw the ball</strong>.</li>
       <li>All matches will be played with <strong>4 overs per innings</strong>.</li>
-      <li><strong>One over must be compulsorily bowled by a female player</strong>, and that over must be <strong>batting by female players only</strong>.</li>
+      <li><strong>One over must be compulsorily bowled by a female player</strong>, and that over must be <strong>batted by female players only</strong>.</li>
       <li><strong>The umpire’s decision is final</strong>. Any violation may lead to <strong>disqualification of the team</strong>.</li>
       <li>Teams must carry their <strong>college ID cards</strong> and <strong>bats</strong>. These will <strong>not be provided by the organizers</strong>.</li>
       <li><strong>Sports attire is compulsory</strong> for all players.</li>
