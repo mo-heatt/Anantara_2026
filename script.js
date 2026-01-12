@@ -131,7 +131,7 @@ const eventDetails = {
     </ul>
   `,
 
-banners: `
+  banners: `
   <h2>Banners of Indus</h2>
   <p><strong>Theme:</strong> Roots of the Indus: Identity, Clans and Civilization Pride.</p>
   <p><strong>Event Heads:</strong> Mitali Chari – 9730204899, Aastha Rawal – 9146559377</p>
@@ -163,7 +163,7 @@ banners: `
     <li>Overall artistic impression</li>
     <li>Relevance to the theme</li>
   </ul>
-`,
+  `,
 
   icebreaker: `
     <h2>Ice Breaker</h2>
@@ -284,6 +284,7 @@ banners: `
       <li>2 participants per team.</li>
       <li>Total time: 10 minutes.</li>
       <li>Topics will be given on the spot</li>
+      <li>A surprise qualification element will be revealed at the venue.</li>
       <li>Includes opening speech, arguments, rebuttals, and closing.</li>
     </ul>
     <h3>Conduct Rules</h3>
@@ -306,18 +307,18 @@ banners: `
   mrmiss: `
     <h2>Mr &amp; Miss Anantara</h2>
     <p><strong>Team:</strong> 1 Male + 1 Female participant</p>
-    <p><strong>Event Heads:</strong> Anca Barreto – 7972046649, Sanjeel Naik Dessai – 9511669107</p>
+    <p><strong>Event Heads:</strong> Anca Barreto – 7066387179, Sanjeel Naik Dessai – 9511669107</p>
     <h3>Format</h3>
     <ul>
       <li>3 rounds in total.</li>
-      <li>Round 1 – Day 1(Physical).</li>
-      <li>Round 2 – Day 1(Physical).</li>
-      <li>Final Round – Day 2(ON STAGE).</li>
+      <li>Round 1 – Day 1 (Eliminatory Round/ OFF STAGE).</li>
+      <li>Round 2 – Day 2 (Introduction and Talent Round/ ON STAGE).</li>
+      <li>Final Round – Day 2(Ramp walk and QnA round/ ON STAGE).</li>
     </ul>
     <h3>Rules</h3>
     <ul>
       <li>Only 3 Minutes for the performance on Stage</li>
-      <li>Audio for on-stage performances must be submitted at the Registration Counter.</li>
+      <li>Audio for on-stage performances must be submitted 0n 28th January to the respective event head.</li>
       <li>Vulgarity in costume or performance leads to immediate disqualification.</li>
       <li>Only one final winner will be crowned.</li>
       <li>Only passing both the rounds will lead to the final round</li>
@@ -327,6 +328,7 @@ banners: `
       <li>Originality</li>
       <li>Presentation</li>
       <li>Confidence</li>
+      <li>Communication Skills</li>
     </ul>
   `,
 
@@ -529,6 +531,13 @@ agt: `
       <li>Best out of waste model usage is compulsory</li>
       <li>Fire and Water are strictly not allowed</li>
     </ul>
+    <h3>Judging Criteria</h3>
+    <ul>
+      <li>Formation</li>
+      <li>Storyline</li>
+      <li>Relevance to Theme</li>
+      <li>Costume</li>
+    </ul>
   `,
 
   // OFF-STAGE EVENTS
@@ -541,8 +550,8 @@ agt: `
       <li>One team per clan; 25 to 35 participants in a team.</li>
       <li>Time limit: 8-15 minutes infront of judges.</li>
       <li>Flag painting: Flag should be used.</li>
-      <li> Real tools can be used and real music is allowed.</li>
-      <li>Instrumental, live music, or soundtrack allowed.</li>
+      <li>Real tools can be used and real music is allowed.</li>
+      <li>Pre recorded instruments or sound tracks are not allowed.</li>
       <li>No vulgarity, abusive language, or inappropriate dressing.</li>
       <li>Late reporting beyond the slot results in penalty points.</li>
       <li>Exceeding time limit results in point deduction.</li>
