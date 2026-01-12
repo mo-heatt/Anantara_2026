@@ -238,7 +238,7 @@ banners: `
   // ON-STAGE EVENTS
   sharktank: `
     <h2>Shark Tank</h2>
-    <p><strong>Theme:</strong> From Indus to Innovation</p>
+    <p><strong>Theme:</strong> From Ancient to Innovation</p>
     <p><strong>Event Heads:</strong> Virasri Dhuri – 9022258096, Shivam Naik Gaonkar – 7447724414</p>
     <p>Business ideas inspired by asian wisdom, built for the future.</p>
     <h3>Team & Format</h3>
