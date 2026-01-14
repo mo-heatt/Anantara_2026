@@ -966,8 +966,22 @@ h2 {
   animation-play-state: paused;
 }
 
-.btn-copper.btn-small {
-    padding: 8px 16px;      /* smaller padding */
-    font-size: 14px;        /* smaller text */
-    line-height: 1.2;       /* optional, adjust vertical spacing */
+.btn-download {
+    display: inline-block;
+    padding: 6px 14px;           /* smaller and compact */
+    font-size: 13px;              /* smaller text */
+    font-weight: 500;
+    color: #d99a6c;               /* copper-like text */
+    border: 2px solid #d99a6c;    /* outline button */
+    border-radius: 12px;          /* slightly rounded */
+    background-color: transparent; /* transparent bg */
+    text-decoration: none;         /* remove underline */
+    transition: all 0.3s ease;
 }
+
+.btn-download:hover {
+    background-color: #d99a6c;    /* copper fill on hover */
+    color: white;                  /* text turns white */
+    transform: scale(1.05);        /* subtle hover pop */
+}
+
