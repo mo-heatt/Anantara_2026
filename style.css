@@ -966,7 +966,7 @@ h2 {
   animation-play-state: paused;
 }
 
-.btn-copper.brochure-pulse {
+.btn-copper.btn-small {
     padding: 8px 16px;      /* smaller padding */
     font-size: 14px;        /* smaller text */
     line-height: 1.2;       /* optional, adjust vertical spacing */
